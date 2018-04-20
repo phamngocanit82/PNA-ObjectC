@@ -14,6 +14,9 @@
 		A1697EDE208A3E93009119F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1697EDD208A3E93009119F1 /* CoreGraphics.framework */; };
 		A1697EE4208A4859009119F1 /* UtilsCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EE2208A4859009119F1 /* UtilsCache.m */; };
 		A1697EE7208A49F0009119F1 /* UtilsPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EE6208A49F0009119F1 /* UtilsPlatform.m */; };
+		A1697EEA208A4B34009119F1 /* UIViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EE8208A4B34009119F1 /* UIViewControl.m */; };
+		A1697EEE208A4BFE009119F1 /* UILabelControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EED208A4BFE009119F1 /* UILabelControl.m */; };
+		A1697EF1208A4CC6009119F1 /* LanguageService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EF0208A4CC6009119F1 /* LanguageService.m */; };
 		A1FB7E74208649A800024C33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7E73208649A800024C33 /* AppDelegate.m */; };
 		A1FB7E77208649A800024C33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7E76208649A800024C33 /* ViewController.m */; };
 		A1FB7E7A208649A800024C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FB7E78208649A800024C33 /* Main.storyboard */; };
@@ -63,6 +66,13 @@
 		A1697EE3208A4859009119F1 /* UtilsCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsCache.h; sourceTree = "<group>"; };
 		A1697EE5208A49F0009119F1 /* UtilsPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsPlatform.h; sourceTree = "<group>"; };
 		A1697EE6208A49F0009119F1 /* UtilsPlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsPlatform.m; sourceTree = "<group>"; };
+		A1697EE8208A4B34009119F1 /* UIViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControl.m; sourceTree = "<group>"; };
+		A1697EE9208A4B34009119F1 /* UIViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControl.h; sourceTree = "<group>"; };
+		A1697EEB208A4B88009119F1 /* HeaderControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderControls.h; sourceTree = "<group>"; };
+		A1697EEC208A4BFE009119F1 /* UILabelControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelControl.h; sourceTree = "<group>"; };
+		A1697EED208A4BFE009119F1 /* UILabelControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelControl.m; sourceTree = "<group>"; };
+		A1697EEF208A4CC6009119F1 /* LanguageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageService.h; sourceTree = "<group>"; };
+		A1697EF0208A4CC6009119F1 /* LanguageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageService.m; sourceTree = "<group>"; };
 		A1FB7E6F208649A800024C33 /* PNA-ObjectC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PNA-ObjectC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FB7E72208649A800024C33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1FB7E73208649A800024C33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -239,6 +249,8 @@
 		A1FB7EAA20864A1900024C33 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				A1697EEF208A4CC6009119F1 /* LanguageService.h */,
+				A1697EF0208A4CC6009119F1 /* LanguageService.m */,
 				A1697EDB208A3E2A009119F1 /* DownloadService.h */,
 				A1697EDA208A3E2A009119F1 /* DownloadService.m */,
 				A1FF34B2208A394A00EC98DD /* ConnectionService.h */,
@@ -275,6 +287,11 @@
 		A1FB7EAE20864A6A00024C33 /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
+				A1697EEB208A4B88009119F1 /* HeaderControls.h */,
+				A1697EEC208A4BFE009119F1 /* UILabelControl.h */,
+				A1697EED208A4BFE009119F1 /* UILabelControl.m */,
+				A1697EE9208A4B34009119F1 /* UIViewControl.h */,
+				A1697EE8208A4B34009119F1 /* UIViewControl.m */,
 			);
 			path = CustomControl;
 			sourceTree = "<group>";
@@ -523,12 +540,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1697EF1208A4CC6009119F1 /* LanguageService.m in Sources */,
 				A1697EE7208A49F0009119F1 /* UtilsPlatform.m in Sources */,
 				A1697EE4208A4859009119F1 /* UtilsCache.m in Sources */,
+				A1697EEA208A4B34009119F1 /* UIViewControl.m in Sources */,
 				A1FB7E7D208649A800024C33 /* PNA_ObjectC.xcdatamodeld in Sources */,
 				A1FF34B4208A394A00EC98DD /* ConnectionService.m in Sources */,
 				A1FB7E77208649A800024C33 /* ViewController.m in Sources */,
 				A1697EDC208A3E2A009119F1 /* DownloadService.m in Sources */,
+				A1697EEE208A4BFE009119F1 /* UILabelControl.m in Sources */,
 				A1FB7E85208649A800024C33 /* main.m in Sources */,
 				A1FB7EC120864BA700024C33 /* PDKeychainBindings.m in Sources */,
 				A1FB7E74208649A800024C33 /* AppDelegate.m in Sources */,
