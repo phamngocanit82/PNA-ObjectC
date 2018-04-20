@@ -12,7 +12,8 @@
 		A1697ED9208A3D51009119F1 /* PNA.db in Resources */ = {isa = PBXBuildFile; fileRef = A1697ED8208A3D51009119F1 /* PNA.db */; };
 		A1697EDC208A3E2A009119F1 /* DownloadService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EDA208A3E2A009119F1 /* DownloadService.m */; };
 		A1697EDE208A3E93009119F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1697EDD208A3E93009119F1 /* CoreGraphics.framework */; };
-		A1697EE1208A3FF5009119F1 /* CacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EDF208A3FF5009119F1 /* CacheService.m */; };
+		A1697EE4208A4859009119F1 /* UtilsCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EE2208A4859009119F1 /* UtilsCache.m */; };
+		A1697EE7208A49F0009119F1 /* UtilsPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EE6208A49F0009119F1 /* UtilsPlatform.m */; };
 		A1FB7E74208649A800024C33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7E73208649A800024C33 /* AppDelegate.m */; };
 		A1FB7E77208649A800024C33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7E76208649A800024C33 /* ViewController.m */; };
 		A1FB7E7A208649A800024C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FB7E78208649A800024C33 /* Main.storyboard */; };
@@ -58,8 +59,10 @@
 		A1697EDA208A3E2A009119F1 /* DownloadService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadService.m; sourceTree = "<group>"; };
 		A1697EDB208A3E2A009119F1 /* DownloadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadService.h; sourceTree = "<group>"; };
 		A1697EDD208A3E93009119F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A1697EDF208A3FF5009119F1 /* CacheService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheService.m; sourceTree = "<group>"; };
-		A1697EE0208A3FF5009119F1 /* CacheService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheService.h; sourceTree = "<group>"; };
+		A1697EE2208A4859009119F1 /* UtilsCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsCache.m; sourceTree = "<group>"; };
+		A1697EE3208A4859009119F1 /* UtilsCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsCache.h; sourceTree = "<group>"; };
+		A1697EE5208A49F0009119F1 /* UtilsPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsPlatform.h; sourceTree = "<group>"; };
+		A1697EE6208A49F0009119F1 /* UtilsPlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsPlatform.m; sourceTree = "<group>"; };
 		A1FB7E6F208649A800024C33 /* PNA-ObjectC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PNA-ObjectC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FB7E72208649A800024C33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1FB7E73208649A800024C33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -210,6 +213,10 @@
 		A1FB7EA820864A0800024C33 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				A1697EE5208A49F0009119F1 /* UtilsPlatform.h */,
+				A1697EE6208A49F0009119F1 /* UtilsPlatform.m */,
+				A1697EE3208A4859009119F1 /* UtilsCache.h */,
+				A1697EE2208A4859009119F1 /* UtilsCache.m */,
 				A1FB7EBC20864BA700024C33 /* ActivityViewController.h */,
 				A1FB7EBB20864BA700024C33 /* ActivityViewController.m */,
 				A1FB7EBA20864BA700024C33 /* PDKeychainBindings.h */,
@@ -223,17 +230,15 @@
 		A1FB7EA920864A1600024C33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A1FB7EAA20864A1900024C33 /* Ultility */,
+				A1FB7EAA20864A1900024C33 /* Utility */,
 				A1FB7EAB20864A4C00024C33 /* Object */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A1FB7EAA20864A1900024C33 /* Ultility */ = {
+		A1FB7EAA20864A1900024C33 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				A1697EE0208A3FF5009119F1 /* CacheService.h */,
-				A1697EDF208A3FF5009119F1 /* CacheService.m */,
 				A1697EDB208A3E2A009119F1 /* DownloadService.h */,
 				A1697EDA208A3E2A009119F1 /* DownloadService.m */,
 				A1FF34B2208A394A00EC98DD /* ConnectionService.h */,
@@ -241,7 +246,7 @@
 				A1FF34B0208A38B400EC98DD /* SQLiteService.h */,
 				A1FF34AF208A38B300EC98DD /* SQLiteService.m */,
 			);
-			path = Ultility;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		A1FB7EAB20864A4C00024C33 /* Object */ = {
@@ -518,10 +523,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1697EE7208A49F0009119F1 /* UtilsPlatform.m in Sources */,
+				A1697EE4208A4859009119F1 /* UtilsCache.m in Sources */,
 				A1FB7E7D208649A800024C33 /* PNA_ObjectC.xcdatamodeld in Sources */,
 				A1FF34B4208A394A00EC98DD /* ConnectionService.m in Sources */,
 				A1FB7E77208649A800024C33 /* ViewController.m in Sources */,
-				A1697EE1208A3FF5009119F1 /* CacheService.m in Sources */,
 				A1697EDC208A3E2A009119F1 /* DownloadService.m in Sources */,
 				A1FB7E85208649A800024C33 /* main.m in Sources */,
 				A1FB7EC120864BA700024C33 /* PDKeychainBindings.m in Sources */,

@@ -154,7 +154,7 @@
     if(dataTask){
         self.isRequesting = YES;
         self.callbackError();
-        [CacheService destroyNetworkCache];
+        [UtilsCache destroyNetworkCache];
     }
 }
 -(void)parseString:(NSString*)responseString{
@@ -186,7 +186,7 @@
     }
     self.response = [NSMutableDictionary dictionaryWithDictionary: dic];
     self.callbackComplete(self.response);
-    [CacheService destroyNetworkCache];
+    [UtilsCache destroyNetworkCache];
     responseString = nil;
 }
 @end

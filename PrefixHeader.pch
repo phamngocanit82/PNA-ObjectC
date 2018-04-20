@@ -13,7 +13,8 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import "NSDictionary_JSONExtensions.h"
 #import "AESCrypt.h"
-#import "CacheService.h"
+#import "UtilsPlatform.h"
+#import "UtilsCache.h"
 #import "SQLiteService.h"
 #import "ConnectionService.h"
 #import "DownloadService.h"

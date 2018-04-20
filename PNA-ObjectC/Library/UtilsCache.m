@@ -1,6 +1,6 @@
 #import <AdSupport/ASIdentifierManager.h>
 #import "PDKeychainBindings.h"
-@implementation CacheService
+@implementation UtilsCache
 //set key
 +(void)clearWithKey:(NSString*)strKey{
     PDKeychainBindings *bindings = [PDKeychainBindings sharedKeychainBindings];

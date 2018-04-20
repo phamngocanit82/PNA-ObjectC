@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface CacheService : NSObject
+@interface UtilsCache : NSObject
 +(void)clearWithKey:(NSString*)strKey;
 
 +(void)setKeyWithBool:(NSString*)strKey Value:(BOOL)boolValue;

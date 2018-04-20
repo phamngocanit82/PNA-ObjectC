@@ -95,14 +95,14 @@
                 [[NSFileManager defaultManager] removeItemAtPath:[NSString stringWithFormat:@"%@/Caches/language.zip",[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory,NSUserDomainMask, YES) objectAtIndex:0]] error:NULL];
             }
             self.callbackComplete(nil);
-            [CacheService destroyNetworkCache];
+            [UtilsCache destroyNetworkCache];
         }
     }else{
         if(error.code==-1009||error.code==-1001||error.code==-1003){
             if(dataTask){
                 self.isRequesting = NO;
                 self.callbackError();
-                [CacheService destroyNetworkCache];
+                [UtilsCache destroyNetworkCache];
             }
         }
     }
