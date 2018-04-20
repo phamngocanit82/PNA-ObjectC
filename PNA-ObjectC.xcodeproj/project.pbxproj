@@ -17,6 +17,10 @@
 		A1697EEA208A4B34009119F1 /* UIViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EE8208A4B34009119F1 /* UIViewControl.m */; };
 		A1697EEE208A4BFE009119F1 /* UILabelControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EED208A4BFE009119F1 /* UILabelControl.m */; };
 		A1697EF1208A4CC6009119F1 /* LanguageService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EF0208A4CC6009119F1 /* LanguageService.m */; };
+		A1697EF4208A4F72009119F1 /* UITextFieldControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EF2208A4F71009119F1 /* UITextFieldControl.m */; };
+		A1697EF7208A5019009119F1 /* UtilsFont.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EF5208A5019009119F1 /* UtilsFont.m */; };
+		A1697EFA208A50D7009119F1 /* UIImageViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EF9208A50D7009119F1 /* UIImageViewControl.m */; };
+		A1697EFD208A52CF009119F1 /* UIButtonControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EFB208A52CF009119F1 /* UIButtonControl.m */; };
 		A1FB7E74208649A800024C33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7E73208649A800024C33 /* AppDelegate.m */; };
 		A1FB7E77208649A800024C33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7E76208649A800024C33 /* ViewController.m */; };
 		A1FB7E7A208649A800024C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FB7E78208649A800024C33 /* Main.storyboard */; };
@@ -73,6 +77,14 @@
 		A1697EED208A4BFE009119F1 /* UILabelControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelControl.m; sourceTree = "<group>"; };
 		A1697EEF208A4CC6009119F1 /* LanguageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageService.h; sourceTree = "<group>"; };
 		A1697EF0208A4CC6009119F1 /* LanguageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageService.m; sourceTree = "<group>"; };
+		A1697EF2208A4F71009119F1 /* UITextFieldControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldControl.m; sourceTree = "<group>"; };
+		A1697EF3208A4F72009119F1 /* UITextFieldControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldControl.h; sourceTree = "<group>"; };
+		A1697EF5208A5019009119F1 /* UtilsFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsFont.m; sourceTree = "<group>"; };
+		A1697EF6208A5019009119F1 /* UtilsFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsFont.h; sourceTree = "<group>"; };
+		A1697EF8208A50D7009119F1 /* UIImageViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewControl.h; sourceTree = "<group>"; };
+		A1697EF9208A50D7009119F1 /* UIImageViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewControl.m; sourceTree = "<group>"; };
+		A1697EFB208A52CF009119F1 /* UIButtonControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonControl.m; sourceTree = "<group>"; };
+		A1697EFC208A52CF009119F1 /* UIButtonControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonControl.h; sourceTree = "<group>"; };
 		A1FB7E6F208649A800024C33 /* PNA-ObjectC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PNA-ObjectC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FB7E72208649A800024C33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1FB7E73208649A800024C33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -223,6 +235,8 @@
 		A1FB7EA820864A0800024C33 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				A1697EF6208A5019009119F1 /* UtilsFont.h */,
+				A1697EF5208A5019009119F1 /* UtilsFont.m */,
 				A1697EE5208A49F0009119F1 /* UtilsPlatform.h */,
 				A1697EE6208A49F0009119F1 /* UtilsPlatform.m */,
 				A1697EE3208A4859009119F1 /* UtilsCache.h */,
@@ -288,10 +302,16 @@
 			isa = PBXGroup;
 			children = (
 				A1697EEB208A4B88009119F1 /* HeaderControls.h */,
+				A1697EF3208A4F72009119F1 /* UITextFieldControl.h */,
+				A1697EF2208A4F71009119F1 /* UITextFieldControl.m */,
 				A1697EEC208A4BFE009119F1 /* UILabelControl.h */,
 				A1697EED208A4BFE009119F1 /* UILabelControl.m */,
+				A1697EFC208A52CF009119F1 /* UIButtonControl.h */,
+				A1697EFB208A52CF009119F1 /* UIButtonControl.m */,
 				A1697EE9208A4B34009119F1 /* UIViewControl.h */,
 				A1697EE8208A4B34009119F1 /* UIViewControl.m */,
+				A1697EF8208A50D7009119F1 /* UIImageViewControl.h */,
+				A1697EF9208A50D7009119F1 /* UIImageViewControl.m */,
 			);
 			path = CustomControl;
 			sourceTree = "<group>";
@@ -540,16 +560,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1697EFD208A52CF009119F1 /* UIButtonControl.m in Sources */,
 				A1697EF1208A4CC6009119F1 /* LanguageService.m in Sources */,
 				A1697EE7208A49F0009119F1 /* UtilsPlatform.m in Sources */,
 				A1697EE4208A4859009119F1 /* UtilsCache.m in Sources */,
+				A1697EFA208A50D7009119F1 /* UIImageViewControl.m in Sources */,
 				A1697EEA208A4B34009119F1 /* UIViewControl.m in Sources */,
 				A1FB7E7D208649A800024C33 /* PNA_ObjectC.xcdatamodeld in Sources */,
 				A1FF34B4208A394A00EC98DD /* ConnectionService.m in Sources */,
 				A1FB7E77208649A800024C33 /* ViewController.m in Sources */,
+				A1697EF4208A4F72009119F1 /* UITextFieldControl.m in Sources */,
 				A1697EDC208A3E2A009119F1 /* DownloadService.m in Sources */,
 				A1697EEE208A4BFE009119F1 /* UILabelControl.m in Sources */,
 				A1FB7E85208649A800024C33 /* main.m in Sources */,
+				A1697EF7208A5019009119F1 /* UtilsFont.m in Sources */,
 				A1FB7EC120864BA700024C33 /* PDKeychainBindings.m in Sources */,
 				A1FB7E74208649A800024C33 /* AppDelegate.m in Sources */,
 				A1FF34B1208A38B400EC98DD /* SQLiteService.m in Sources */,

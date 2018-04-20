@@ -10,5 +10,8 @@
 #define HeaderControls_h
 #import "UIViewControl.h"
 #import "UILabelControl.h"
+#import "UIButtonControl.h"
+#import "UITextFieldControl.h"
+#import "UIImageViewControl.h"
 
 #endif /* HeaderControls_h */

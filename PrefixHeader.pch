@@ -15,10 +15,12 @@
 #import "AESCrypt.h"
 #import "UtilsPlatform.h"
 #import "UtilsCache.h"
+#import "UtilsFont.h"
 #import "SQLiteService.h"
 #import "ConnectionService.h"
 #import "DownloadService.h"
 #import "LanguageService.h"
+
 
 #import "HeaderControls.h"
 // Include any system framework and library headers here that should be included in all compilation units.

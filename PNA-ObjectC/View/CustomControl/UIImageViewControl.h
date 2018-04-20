@@ -1,10 +1,11 @@
 #import <UIKit/UIKit.h>
-@interface UILabelControl : UILabel
-@property(copy)IBInspectable NSString *keyLang;
+@interface UIImageViewControl : UIImageView
 @property(strong, nonatomic)IBInspectable UIColor *borderColor;
 @property(assign)IBInspectable NSInteger borderWidth;
 @property(assign)IBInspectable CGFloat cornerRadius;
 @property IBInspectable BOOL drawBorder;
-@property IBInspectable BOOL drawOutline;
-@property IBInspectable BOOL drawGradient;
+
+-(void)imageWithPath:(NSString*)strPath;
+
+-(void)backgroundWithPath:(NSString*)strPath;
 @end
