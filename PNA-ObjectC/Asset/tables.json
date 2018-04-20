@@ -1,0 +1,25 @@
+{
+    "list":[
+        {
+            "name":"PNA1.db",
+            "tables":[
+                {
+                    "table":"table_setting_items",
+                    "field": "content varchar"
+                }
+            ]
+        },
+        {
+            "name":"PNA2.db",
+            "tables":[
+                {
+                    "table": "table_dashboard",
+                    "field": "param varchar,content varchar"
+                }
+            ]
+        }
+    ],
+    "info":{
+        "version":1.0
+    }
+}

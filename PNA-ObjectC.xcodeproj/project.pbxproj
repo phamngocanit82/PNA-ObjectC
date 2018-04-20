@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		10BCA112A30B6718335DD0C4 /* libPods-PNA-ObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8390E9C0FD214C665B34B9 /* libPods-PNA-ObjectC.a */; };
+		A1697ED7208A3B95009119F1 /* tables.json in Resources */ = {isa = PBXBuildFile; fileRef = A1697ED6208A3B95009119F1 /* tables.json */; };
+		A1697ED9208A3D51009119F1 /* PNA.db in Resources */ = {isa = PBXBuildFile; fileRef = A1697ED8208A3D51009119F1 /* PNA.db */; };
+		A1697EDC208A3E2A009119F1 /* DownloadService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EDA208A3E2A009119F1 /* DownloadService.m */; };
+		A1697EDE208A3E93009119F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1697EDD208A3E93009119F1 /* CoreGraphics.framework */; };
+		A1697EE1208A3FF5009119F1 /* CacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EDF208A3FF5009119F1 /* CacheService.m */; };
 		A1FB7E74208649A800024C33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7E73208649A800024C33 /* AppDelegate.m */; };
 		A1FB7E77208649A800024C33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7E76208649A800024C33 /* ViewController.m */; };
 		A1FB7E7A208649A800024C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FB7E78208649A800024C33 /* Main.storyboard */; };
@@ -20,6 +25,8 @@
 		A1FB7EC020864BA700024C33 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7EBB20864BA700024C33 /* ActivityViewController.m */; };
 		A1FB7EC120864BA700024C33 /* PDKeychainBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7EBD20864BA700024C33 /* PDKeychainBindings.m */; };
 		A1FB7EC220864BA700024C33 /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7EBE20864BA700024C33 /* PDKeychainBindingsController.m */; };
+		A1FF34B1208A38B400EC98DD /* SQLiteService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FF34AF208A38B300EC98DD /* SQLiteService.m */; };
+		A1FF34B4208A394A00EC98DD /* ConnectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FF34B3208A394A00EC98DD /* ConnectionService.m */; };
 		E16B220D53C06DC9BB078026 /* libPods-PNA-ObjectCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA537C2B75726B28EDF12D1E /* libPods-PNA-ObjectCTests.a */; };
 		FE8FBA34A3C121DD61B791D5 /* libPods-PNA-ObjectCUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 647DA4D2BF46769F8670C0EC /* libPods-PNA-ObjectCUITests.a */; };
 /* End PBXBuildFile section */
@@ -46,6 +53,13 @@
 		51F599D5D1ACA69CB0972306 /* Pods-PNA-ObjectCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-ObjectCUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-ObjectCUITests/Pods-PNA-ObjectCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		647DA4D2BF46769F8670C0EC /* libPods-PNA-ObjectCUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PNA-ObjectCUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F114B93C8CF0AA2090393DA /* Pods-PNA-ObjectCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-ObjectCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-ObjectCTests/Pods-PNA-ObjectCTests.release.xcconfig"; sourceTree = "<group>"; };
+		A1697ED6208A3B95009119F1 /* tables.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tables.json; sourceTree = "<group>"; };
+		A1697ED8208A3D51009119F1 /* PNA.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PNA.db; sourceTree = "<group>"; };
+		A1697EDA208A3E2A009119F1 /* DownloadService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadService.m; sourceTree = "<group>"; };
+		A1697EDB208A3E2A009119F1 /* DownloadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadService.h; sourceTree = "<group>"; };
+		A1697EDD208A3E93009119F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A1697EDF208A3FF5009119F1 /* CacheService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheService.m; sourceTree = "<group>"; };
+		A1697EE0208A3FF5009119F1 /* CacheService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheService.h; sourceTree = "<group>"; };
 		A1FB7E6F208649A800024C33 /* PNA-ObjectC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PNA-ObjectC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FB7E72208649A800024C33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1FB7E73208649A800024C33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +83,11 @@
 		A1FB7EBD20864BA700024C33 /* PDKeychainBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindings.m; sourceTree = "<group>"; };
 		A1FB7EBE20864BA700024C33 /* PDKeychainBindingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindingsController.m; sourceTree = "<group>"; };
 		A1FB7EBF20864BA700024C33 /* PDKeychainBindingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeychainBindingsController.h; sourceTree = "<group>"; };
+		A1FF34AE208A383F00EC98DD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A1FF34AF208A38B300EC98DD /* SQLiteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteService.m; sourceTree = "<group>"; };
+		A1FF34B0208A38B400EC98DD /* SQLiteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteService.h; sourceTree = "<group>"; };
+		A1FF34B2208A394A00EC98DD /* ConnectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionService.h; sourceTree = "<group>"; };
+		A1FF34B3208A394A00EC98DD /* ConnectionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionService.m; sourceTree = "<group>"; };
 		B8CE73F6BFBA5C1E0320E56E /* Pods-PNA-ObjectCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-ObjectCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-ObjectCTests/Pods-PNA-ObjectCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2A05C31BAB139C972510933 /* Pods-PNA-ObjectCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-ObjectCUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-ObjectCUITests/Pods-PNA-ObjectCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D57E227473A699294BF26A92 /* Pods-PNA-ObjectC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-ObjectC.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-ObjectC/Pods-PNA-ObjectC.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1697EDE208A3E93009119F1 /* CoreGraphics.framework in Frameworks */,
 				10BCA112A30B6718335DD0C4 /* libPods-PNA-ObjectC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +127,7 @@
 		5614D54D1C650E758F6EBAB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1697EDD208A3E93009119F1 /* CoreGraphics.framework */,
 				0A8390E9C0FD214C665B34B9 /* libPods-PNA-ObjectC.a */,
 				EA537C2B75726B28EDF12D1E /* libPods-PNA-ObjectCTests.a */,
 				647DA4D2BF46769F8670C0EC /* libPods-PNA-ObjectCUITests.a */,
@@ -117,6 +138,7 @@
 		A1FB7E66208649A800024C33 = {
 			isa = PBXGroup;
 			children = (
+				A1FF34AE208A383F00EC98DD /* PrefixHeader.pch */,
 				A1FB7E71208649A800024C33 /* PNA-ObjectC */,
 				A1FB7E8D208649A800024C33 /* PNA-ObjectCTests */,
 				A1FB7E98208649A800024C33 /* PNA-ObjectCUITests */,
@@ -179,6 +201,8 @@
 		A1FB7EA720864A0000024C33 /* Asset */ = {
 			isa = PBXGroup;
 			children = (
+				A1697ED8208A3D51009119F1 /* PNA.db */,
+				A1697ED6208A3B95009119F1 /* tables.json */,
 			);
 			path = Asset;
 			sourceTree = "<group>";
@@ -208,6 +232,14 @@
 		A1FB7EAA20864A1900024C33 /* Ultility */ = {
 			isa = PBXGroup;
 			children = (
+				A1697EE0208A3FF5009119F1 /* CacheService.h */,
+				A1697EDF208A3FF5009119F1 /* CacheService.m */,
+				A1697EDB208A3E2A009119F1 /* DownloadService.h */,
+				A1697EDA208A3E2A009119F1 /* DownloadService.m */,
+				A1FF34B2208A394A00EC98DD /* ConnectionService.h */,
+				A1FF34B3208A394A00EC98DD /* ConnectionService.m */,
+				A1FF34B0208A38B400EC98DD /* SQLiteService.h */,
+				A1FF34AF208A38B300EC98DD /* SQLiteService.m */,
 			);
 			path = Ultility;
 			sourceTree = "<group>";
@@ -372,8 +404,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1697ED9208A3D51009119F1 /* PNA.db in Resources */,
 				A1FB7E82208649A800024C33 /* LaunchScreen.storyboard in Resources */,
 				A1FB7E7F208649A800024C33 /* Assets.xcassets in Resources */,
+				A1697ED7208A3B95009119F1 /* tables.json in Resources */,
 				A1FB7E7A208649A800024C33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,10 +519,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1FB7E7D208649A800024C33 /* PNA_ObjectC.xcdatamodeld in Sources */,
+				A1FF34B4208A394A00EC98DD /* ConnectionService.m in Sources */,
 				A1FB7E77208649A800024C33 /* ViewController.m in Sources */,
+				A1697EE1208A3FF5009119F1 /* CacheService.m in Sources */,
+				A1697EDC208A3E2A009119F1 /* DownloadService.m in Sources */,
 				A1FB7E85208649A800024C33 /* main.m in Sources */,
 				A1FB7EC120864BA700024C33 /* PDKeychainBindings.m in Sources */,
 				A1FB7E74208649A800024C33 /* AppDelegate.m in Sources */,
+				A1FF34B1208A38B400EC98DD /* SQLiteService.m in Sources */,
 				A1FB7EC220864BA700024C33 /* PDKeychainBindingsController.m in Sources */,
 				A1FB7EC020864BA700024C33 /* ActivityViewController.m in Sources */,
 			);
@@ -655,6 +693,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = "PNA-ObjectC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PNA.PNA-ObjectC";
@@ -669,6 +709,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = "PNA-ObjectC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PNA.PNA-ObjectC";
