@@ -1,0 +1,1 @@
+../../../../GoogleTagManager/Frameworks/frameworks/GoogleTagManager.framework/Headers/GoogleTagManager.h

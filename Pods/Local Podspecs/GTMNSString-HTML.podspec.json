@@ -1,0 +1,22 @@
+{
+  "name": "GTMNSString-HTML",
+  "version": "0.0.1",
+  "summary": "Dealing with NSStrings that contain HTML.",
+  "homepage": "https://github.com/siriusdely/GTMNSString-HTML",
+  "authors": {
+    "Sirius Dely": "mail@siriusdely.com"
+  },
+  "license": {
+    "type": "Apache License 2.0",
+    "file": "LICENSE"
+  },
+  "source": {
+    "git": "https://github.com/siriusdely/GTMNSString-HTML.git",
+    "commit": "57cc38f106911d9d4ee73db67fcaa6df681b51bc"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source_files": "*.{h,m}",
+  "compiler_flags": "-w"
+}

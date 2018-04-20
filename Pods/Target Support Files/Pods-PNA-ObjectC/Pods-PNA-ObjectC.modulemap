@@ -1,0 +1,6 @@
+module Pods_PNA_ObjectC [system] {
+  umbrella header "Pods-PNA-ObjectC-umbrella.h"
+
+  export *
+  module * { export * }
+}
