@@ -23,6 +23,7 @@ PODS:
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
   - DGActivityIndicatorView (2.1.1)
+  - EGOTableViewPullRefreshAndLoadMore (1.0.4)
   - Emitter (0.0.9):
     - BlocksKit/DynamicDelegate
   - FBSDKCoreKit (4.32.0):
@@ -51,7 +52,7 @@ PODS:
     - GoogleToolboxForMac/Logger (~> 2.1)
     - Protobuf (~> 3.5)
   - GDataXML-HTML (1.4.1)
-  - GoogleAnalytics (3.17.0)
+  - GoogleAnalytics (3.16.0)
   - GoogleMaps (2.6.0):
     - GoogleMaps/Maps (= 2.6.0)
   - GoogleMaps/Base (2.6.0)
@@ -62,11 +63,8 @@ PODS:
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
     - GTMOAuth2 (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleSymbolUtilities (1.1.2)
-  - GoogleTagManager (6.0.0):
-    - FirebaseAnalytics (~> 4.0)
-    - GoogleAnalytics (~> 3.17)
-    - GoogleUtilities (~> 1.3)
+  - GoogleTagManager (3.15.1):
+    - GoogleAnalytics (= 3.16.0)
   - GoogleToolboxForMac/DebugUtils (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - GoogleToolboxForMac/Defines (2.1.3)
@@ -79,8 +77,6 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.3)
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.1.3)"
-  - GoogleUtilities (1.3.2):
-    - GoogleSymbolUtilities (~> 1.1)
   - GTMNSString-HTML (0.0.1)
   - GTMOAuth2 (1.1.6):
     - GTMSessionFetcher (~> 1.1)
@@ -118,13 +114,14 @@ PODS:
 DEPENDENCIES:
   - AESCrypt
   - DGActivityIndicatorView
+  - EGOTableViewPullRefreshAndLoadMore
   - FBSDKCoreKit
   - FBSDKLoginKit
   - Firebase/Messaging
   - GDataXML-HTML
   - GoogleMaps
   - GoogleSignIn
-  - GoogleTagManager
+  - GoogleTagManager (= 3.15.1)
   - GTMNSString-HTML (from `https://github.com/siriusdely/GTMNSString-HTML.git`)
   - InstagramKit
   - NSHash
@@ -142,6 +139,7 @@ SPEC REPOS:
     - BlocksKit
     - Bolts
     - DGActivityIndicatorView
+    - EGOTableViewPullRefreshAndLoadMore
     - Emitter
     - FBSDKCoreKit
     - FBSDKLoginKit
@@ -154,10 +152,8 @@ SPEC REPOS:
     - GoogleAnalytics
     - GoogleMaps
     - GoogleSignIn
-    - GoogleSymbolUtilities
     - GoogleTagManager
     - GoogleToolboxForMac
-    - GoogleUtilities
     - GTMOAuth2
     - GTMSessionFetcher
     - InstagramKit
@@ -186,6 +182,7 @@ SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
+  EGOTableViewPullRefreshAndLoadMore: 118a0824590db042d42e08fcc442b93cebf15e73
   Emitter: cf50bf44fc8817535018fbd6c4fd576b87803e78
   FBSDKCoreKit: 55d7f2ac45d9c4b9b6119f4e43900fe84b9b7b1b
   FBSDKLoginKit: 32ac05c2a59952c363c2e85aafa8f73ba93bcbad
@@ -195,13 +192,11 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
   FirebaseMessaging: 75cdb862e86c30e0913a2ff307e48d49357c5b73
   GDataXML-HTML: a4f11079b48d9fe96ff1fe478943a317185227e2
-  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  GoogleAnalytics: 3de986b2fa29012c69fa415566006a9c9cf25320
   GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
   GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
-  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
-  GoogleTagManager: 07acea48abe73aac17550b81bbf52a37db2d7dd6
+  GoogleTagManager: 8e53b02f09a7e5980f5b8d574672b97879f9fcd1
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
-  GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
   GTMNSString-HTML: 626e257c3da1cc2d4f2e52dce2a22baba388c58a
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
@@ -216,6 +211,6 @@ SPEC CHECKSUMS:
   TouchJSON: 39be3595ebe489095311d97ce0c824417324cb74
   XCDYouTubeKit: dccfe0c17dd5c5187969ec27e93069573badb08f
 
-PODFILE CHECKSUM: df2f0ccffbd4ca986fc534c6493802e90097415a
+PODFILE CHECKSUM: 07fc0b3771bff569a41b8c2396cf6af9b1d8aa2f
 
 COCOAPODS: 1.5.0

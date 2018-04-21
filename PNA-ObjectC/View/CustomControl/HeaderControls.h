@@ -13,5 +13,7 @@
 #import "UIButtonControl.h"
 #import "UITextFieldControl.h"
 #import "UIImageViewControl.h"
+#import "WKWebViewControl.h"
+#import "UIVideoControl.h"
 
 #endif /* HeaderControls_h */

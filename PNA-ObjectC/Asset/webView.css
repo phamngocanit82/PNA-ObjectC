@@ -1,0 +1,28 @@
+@font-face{
+    font-family: 'Helvetica Neue Custom';
+    src: local('Helvetica Neue Custom'),url('HelveticaCustom.ttf') format('opentype');
+}
+body{
+    font-size: 13px;
+    font-style: normal;
+    background-color:transparent;
+    color:#484848;
+    display:table;
+    vertical-align:middle;
+    padding:0;
+    text-align:left;
+    -webkit-text-size-adjust:none;
+}
+a{
+    text-decoration:underline;
+}
+h1{
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+}
+h2{
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+}

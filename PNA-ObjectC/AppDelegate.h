@@ -15,6 +15,8 @@
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
+@property (assign) BOOL fullScreenYouTube;
+           
 - (void)saveContext;
 
 

@@ -12,7 +12,7 @@ target 'PNA-ObjectC' do
     pod 'TouchJSON'
     pod 'GDataXML-HTML'
     pod 'AESCrypt'
-    pod 'GoogleTagManager'
+    pod 'GoogleTagManager', '3.15.1'
     pod 'GoogleSignIn'
     pod 'GoogleMaps'
     pod 'NSHash'
@@ -22,6 +22,7 @@ target 'PNA-ObjectC' do
     pod 'InstagramKit'
     pod 'XCDYouTubeKit'
     pod 'DGActivityIndicatorView'
+    pod 'EGOTableViewPullRefreshAndLoadMore'
     pod 'SocketIO'
 
   target 'PNA-ObjectCTests' do
