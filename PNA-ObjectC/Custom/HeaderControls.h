@@ -8,12 +8,12 @@
 
 #ifndef HeaderControls_h
 #define HeaderControls_h
-#import "UIViewControl.h"
-#import "UILabelControl.h"
-#import "UIButtonControl.h"
-#import "UITextFieldControl.h"
-#import "UIImageViewControl.h"
-#import "WKWebViewControl.h"
-#import "UIVideoControl.h"
+#import "CustomView.h"
+#import "CustomLabel.h"
+#import "CustomButton.h"
+#import "CustomTextField.h"
+#import "CustomImageView.h"
+#import "CustomWKWebView.h"
+#import "CustomVideo.h"
 
 #endif /* HeaderControls_h */

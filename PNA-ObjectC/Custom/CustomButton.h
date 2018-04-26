@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 IB_DESIGNABLE
-@interface UIButtonControl: UIButton
+@interface CustomButton: UIButton
 @property(copy)IBInspectable NSString *keyLang;
 @property(copy)IBInspectable NSString *openScreenGTM;
 @property(copy)IBInspectable NSString *categoryGTM;

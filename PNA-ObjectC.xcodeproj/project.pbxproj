@@ -14,17 +14,17 @@
 		A1697EDE208A3E93009119F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1697EDD208A3E93009119F1 /* CoreGraphics.framework */; };
 		A1697EE4208A4859009119F1 /* UtilsCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EE2208A4859009119F1 /* UtilsCache.m */; };
 		A1697EE7208A49F0009119F1 /* UtilsPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EE6208A49F0009119F1 /* UtilsPlatform.m */; };
-		A1697EEA208A4B34009119F1 /* UIViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EE8208A4B34009119F1 /* UIViewControl.m */; };
-		A1697EEE208A4BFE009119F1 /* UILabelControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EED208A4BFE009119F1 /* UILabelControl.m */; };
+		A1697EEA208A4B34009119F1 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EE8208A4B34009119F1 /* CustomView.m */; };
+		A1697EEE208A4BFE009119F1 /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EED208A4BFE009119F1 /* CustomLabel.m */; };
 		A1697EF1208A4CC6009119F1 /* LanguageService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EF0208A4CC6009119F1 /* LanguageService.m */; };
-		A1697EF4208A4F72009119F1 /* UITextFieldControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EF2208A4F71009119F1 /* UITextFieldControl.m */; };
+		A1697EF4208A4F72009119F1 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EF2208A4F71009119F1 /* CustomTextField.m */; };
 		A1697EF7208A5019009119F1 /* UtilsFont.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EF5208A5019009119F1 /* UtilsFont.m */; };
-		A1697EFA208A50D7009119F1 /* UIImageViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EF9208A50D7009119F1 /* UIImageViewControl.m */; };
-		A1697EFD208A52CF009119F1 /* UIButtonControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EFB208A52CF009119F1 /* UIButtonControl.m */; };
-		A1CA15FD208B0219006B3AAF /* WKWebViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CA15FC208B0219006B3AAF /* WKWebViewControl.m */; };
+		A1697EFA208A50D7009119F1 /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EF9208A50D7009119F1 /* CustomImageView.m */; };
+		A1697EFD208A52CF009119F1 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EFB208A52CF009119F1 /* CustomButton.m */; };
+		A1CA15FD208B0219006B3AAF /* CustomWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CA15FC208B0219006B3AAF /* CustomWKWebView.m */; };
 		A1CA15FF208B026E006B3AAF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CA15FE208B026E006B3AAF /* WebKit.framework */; };
 		A1CA1601208B02F3006B3AAF /* webView.css in Resources */ = {isa = PBXBuildFile; fileRef = A1CA1600208B02F3006B3AAF /* webView.css */; };
-		A1CA1604208B035A006B3AAF /* UIVideoControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CA1602208B0359006B3AAF /* UIVideoControl.m */; };
+		A1CA1604208B035A006B3AAF /* CustomVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CA1602208B0359006B3AAF /* CustomVideo.m */; };
 		A1CA1606208B04BA006B3AAF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CA1605208B04BA006B3AAF /* AVFoundation.framework */; };
 		A1CA1609208B0916006B3AAF /* UtilsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CA1608208B0916006B3AAF /* UtilsController.m */; };
 		A1CA160D208B0A50006B3AAF /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CA160C208B0A50006B3AAF /* MainController.m */; };
@@ -81,27 +81,27 @@
 		A1697EE3208A4859009119F1 /* UtilsCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsCache.h; sourceTree = "<group>"; };
 		A1697EE5208A49F0009119F1 /* UtilsPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsPlatform.h; sourceTree = "<group>"; };
 		A1697EE6208A49F0009119F1 /* UtilsPlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsPlatform.m; sourceTree = "<group>"; };
-		A1697EE8208A4B34009119F1 /* UIViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControl.m; sourceTree = "<group>"; };
-		A1697EE9208A4B34009119F1 /* UIViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControl.h; sourceTree = "<group>"; };
+		A1697EE8208A4B34009119F1 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		A1697EE9208A4B34009119F1 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		A1697EEB208A4B88009119F1 /* HeaderControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderControls.h; sourceTree = "<group>"; };
-		A1697EEC208A4BFE009119F1 /* UILabelControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelControl.h; sourceTree = "<group>"; };
-		A1697EED208A4BFE009119F1 /* UILabelControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelControl.m; sourceTree = "<group>"; };
+		A1697EEC208A4BFE009119F1 /* CustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLabel.h; sourceTree = "<group>"; };
+		A1697EED208A4BFE009119F1 /* CustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLabel.m; sourceTree = "<group>"; };
 		A1697EEF208A4CC6009119F1 /* LanguageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageService.h; sourceTree = "<group>"; };
 		A1697EF0208A4CC6009119F1 /* LanguageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageService.m; sourceTree = "<group>"; };
-		A1697EF2208A4F71009119F1 /* UITextFieldControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldControl.m; sourceTree = "<group>"; };
-		A1697EF3208A4F72009119F1 /* UITextFieldControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldControl.h; sourceTree = "<group>"; };
+		A1697EF2208A4F71009119F1 /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		A1697EF3208A4F72009119F1 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
 		A1697EF5208A5019009119F1 /* UtilsFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsFont.m; sourceTree = "<group>"; };
 		A1697EF6208A5019009119F1 /* UtilsFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsFont.h; sourceTree = "<group>"; };
-		A1697EF8208A50D7009119F1 /* UIImageViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewControl.h; sourceTree = "<group>"; };
-		A1697EF9208A50D7009119F1 /* UIImageViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewControl.m; sourceTree = "<group>"; };
-		A1697EFB208A52CF009119F1 /* UIButtonControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonControl.m; sourceTree = "<group>"; };
-		A1697EFC208A52CF009119F1 /* UIButtonControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonControl.h; sourceTree = "<group>"; };
-		A1CA15FB208B0219006B3AAF /* WKWebViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewControl.h; sourceTree = "<group>"; };
-		A1CA15FC208B0219006B3AAF /* WKWebViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewControl.m; sourceTree = "<group>"; };
+		A1697EF8208A50D7009119F1 /* CustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
+		A1697EF9208A50D7009119F1 /* CustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
+		A1697EFB208A52CF009119F1 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		A1697EFC208A52CF009119F1 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		A1CA15FB208B0219006B3AAF /* CustomWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWKWebView.h; sourceTree = "<group>"; };
+		A1CA15FC208B0219006B3AAF /* CustomWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWKWebView.m; sourceTree = "<group>"; };
 		A1CA15FE208B026E006B3AAF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A1CA1600208B02F3006B3AAF /* webView.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = webView.css; sourceTree = "<group>"; };
-		A1CA1602208B0359006B3AAF /* UIVideoControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIVideoControl.m; sourceTree = "<group>"; };
-		A1CA1603208B0359006B3AAF /* UIVideoControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIVideoControl.h; sourceTree = "<group>"; };
+		A1CA1602208B0359006B3AAF /* CustomVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomVideo.m; sourceTree = "<group>"; };
+		A1CA1603208B0359006B3AAF /* CustomVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomVideo.h; sourceTree = "<group>"; };
 		A1CA1605208B04BA006B3AAF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A1CA1607208B0916006B3AAF /* UtilsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsController.h; sourceTree = "<group>"; };
 		A1CA1608208B0916006B3AAF /* UtilsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsController.m; sourceTree = "<group>"; };
@@ -221,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				A1FB7EA720864A0000024C33 /* Asset */,
+				A1FB7EAE20864A6A00024C33 /* Custom */,
 				A1FB7EA820864A0800024C33 /* Library */,
 				A1FB7EA920864A1600024C33 /* Model */,
 				A1FB7EAD20864A6600024C33 /* View */,
@@ -339,32 +340,31 @@
 		A1FB7EAD20864A6600024C33 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A1FB7EAE20864A6A00024C33 /* CustomControl */,
 				A1FB7EAF20864A7500024C33 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		A1FB7EAE20864A6A00024C33 /* CustomControl */ = {
+		A1FB7EAE20864A6A00024C33 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 				A1697EEB208A4B88009119F1 /* HeaderControls.h */,
-				A1CA15FB208B0219006B3AAF /* WKWebViewControl.h */,
-				A1CA15FC208B0219006B3AAF /* WKWebViewControl.m */,
-				A1CA1603208B0359006B3AAF /* UIVideoControl.h */,
-				A1CA1602208B0359006B3AAF /* UIVideoControl.m */,
-				A1697EF3208A4F72009119F1 /* UITextFieldControl.h */,
-				A1697EF2208A4F71009119F1 /* UITextFieldControl.m */,
-				A1697EEC208A4BFE009119F1 /* UILabelControl.h */,
-				A1697EED208A4BFE009119F1 /* UILabelControl.m */,
-				A1697EFC208A52CF009119F1 /* UIButtonControl.h */,
-				A1697EFB208A52CF009119F1 /* UIButtonControl.m */,
-				A1697EE9208A4B34009119F1 /* UIViewControl.h */,
-				A1697EE8208A4B34009119F1 /* UIViewControl.m */,
-				A1697EF8208A50D7009119F1 /* UIImageViewControl.h */,
-				A1697EF9208A50D7009119F1 /* UIImageViewControl.m */,
+				A1CA15FB208B0219006B3AAF /* CustomWKWebView.h */,
+				A1CA15FC208B0219006B3AAF /* CustomWKWebView.m */,
+				A1CA1603208B0359006B3AAF /* CustomVideo.h */,
+				A1CA1602208B0359006B3AAF /* CustomVideo.m */,
+				A1697EF3208A4F72009119F1 /* CustomTextField.h */,
+				A1697EF2208A4F71009119F1 /* CustomTextField.m */,
+				A1697EEC208A4BFE009119F1 /* CustomLabel.h */,
+				A1697EED208A4BFE009119F1 /* CustomLabel.m */,
+				A1697EFC208A52CF009119F1 /* CustomButton.h */,
+				A1697EFB208A52CF009119F1 /* CustomButton.m */,
+				A1697EE9208A4B34009119F1 /* CustomView.h */,
+				A1697EE8208A4B34009119F1 /* CustomView.m */,
+				A1697EF8208A50D7009119F1 /* CustomImageView.h */,
+				A1697EF9208A50D7009119F1 /* CustomImageView.m */,
 			);
-			path = CustomControl;
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		A1FB7EAF20864A7500024C33 /* Cell */ = {
@@ -642,24 +642,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1697EFD208A52CF009119F1 /* UIButtonControl.m in Sources */,
+				A1697EFD208A52CF009119F1 /* CustomButton.m in Sources */,
 				A1CA160D208B0A50006B3AAF /* MainController.m in Sources */,
 				A1697EF1208A4CC6009119F1 /* LanguageService.m in Sources */,
 				A1697EE7208A49F0009119F1 /* UtilsPlatform.m in Sources */,
 				A1697EE4208A4859009119F1 /* UtilsCache.m in Sources */,
-				A1697EFA208A50D7009119F1 /* UIImageViewControl.m in Sources */,
-				A1CA15FD208B0219006B3AAF /* WKWebViewControl.m in Sources */,
-				A1697EEA208A4B34009119F1 /* UIViewControl.m in Sources */,
+				A1697EFA208A50D7009119F1 /* CustomImageView.m in Sources */,
+				A1CA15FD208B0219006B3AAF /* CustomWKWebView.m in Sources */,
+				A1697EEA208A4B34009119F1 /* CustomView.m in Sources */,
 				A1FB7E7D208649A800024C33 /* PNA_ObjectC.xcdatamodeld in Sources */,
 				A1CA1610208B0C17006B3AAF /* PrevViewControllerSegue.m in Sources */,
 				A1CA1616208B0D3D006B3AAF /* ProcessKeyboardController.m in Sources */,
 				A1CA161C208B0F58006B3AAF /* Utils.m in Sources */,
 				A1FF34B4208A394A00EC98DD /* ConnectionService.m in Sources */,
 				A1FB7E77208649A800024C33 /* ViewController.m in Sources */,
-				A1697EF4208A4F72009119F1 /* UITextFieldControl.m in Sources */,
+				A1697EF4208A4F72009119F1 /* CustomTextField.m in Sources */,
 				A1CA1609208B0916006B3AAF /* UtilsController.m in Sources */,
 				A1697EDC208A3E2A009119F1 /* DownloadService.m in Sources */,
-				A1697EEE208A4BFE009119F1 /* UILabelControl.m in Sources */,
+				A1697EEE208A4BFE009119F1 /* CustomLabel.m in Sources */,
 				A1FB7E85208649A800024C33 /* main.m in Sources */,
 				A1697EF7208A5019009119F1 /* UtilsFont.m in Sources */,
 				A1FB7EC120864BA700024C33 /* PDKeychainBindings.m in Sources */,
@@ -667,7 +667,7 @@
 				A1FF34B1208A38B400EC98DD /* SQLiteService.m in Sources */,
 				A1FB7EC220864BA700024C33 /* PDKeychainBindingsController.m in Sources */,
 				A1FB7EC020864BA700024C33 /* ActivityViewController.m in Sources */,
-				A1CA1604208B035A006B3AAF /* UIVideoControl.m in Sources */,
+				A1CA1604208B035A006B3AAF /* CustomVideo.m in Sources */,
 				A1CA1613208B0C30006B3AAF /* RefreshTableHeaderController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

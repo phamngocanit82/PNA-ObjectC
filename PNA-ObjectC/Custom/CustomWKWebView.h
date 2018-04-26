@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
-@interface WKWebViewControl : WKWebView
+@interface CustomWKWebView : WKWebView
 @property(copy, nonatomic)IBInspectable NSString *keyLang;
 
 -(void)setHTML:(NSString*)str;

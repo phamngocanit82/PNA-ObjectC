@@ -1,7 +1,8 @@
-@implementation UIViewControl
+@implementation CustomImageView
 -(void)awakeFromNib{
+    self.clipsToBounds = YES;
+    self.contentMode = UIViewContentModeScaleAspectFill;
     if(self.drawBorder==YES){
-        self.clipsToBounds = YES;
         if(self.borderWidth>0)
             self.layer.borderWidth = self.borderWidth;
         if (!CGColorEqualToColor(self.borderColor.CGColor, [UIColor clearColor].CGColor))
@@ -9,12 +10,12 @@
         if(self.cornerRadius>0)
             self.layer.cornerRadius = self.cornerRadius;
     }
-    if(self.drawGradient==YES){
-        CAGradientLayer *gradient = [CAGradientLayer layer];
-        gradient.frame = self.bounds;
-        gradient.colors = @[(id)self.gradientFromColor.CGColor, (id)self.gradientToColor.CGColor];
-        [self.layer insertSublayer:gradient atIndex:0];
-    }
     [super awakeFromNib];
+}
+-(void)imageWithPath:(NSString*)strPath{
+    //[MILImage imageWithPath:self Path:strPath];
+}
+-(void)backgroundWithPath:(NSString*)strPath{
+    //[MILImage imageWithPath:self Path:strPath];
 }
 @end

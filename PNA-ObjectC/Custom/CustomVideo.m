@@ -1,14 +1,14 @@
 #import <AVFoundation/AVFoundation.h>
-@interface UIVideoControl (){
+@interface CustomVideo (){
 @private
-    WKWebViewControl *videoWKWebView;
+    CustomWKWebView *videoWKWebView;
     UIActivityIndicatorView *activityIndicatorView;
 }
 @end
-@implementation UIVideoControl
+@implementation CustomVideo
 -(void)initVideo{
     self.backgroundColor = [UIColor blackColor];
-    videoWKWebView = [[WKWebViewControl alloc] initWithFrame:self.frame];
+    videoWKWebView = [[CustomWKWebView alloc] initWithFrame:self.frame];
     [self addSubview:videoWKWebView];
     
     [videoWKWebView setBackgroundColor:[UIColor clearColor]];

@@ -1,4 +1,4 @@
-@implementation UIButtonControl
+@implementation CustomButton
 #pragma mark - Initializer
 -(instancetype)initWithCoder:(NSCoder *)decoder {
     self = [super initWithCoder:decoder];

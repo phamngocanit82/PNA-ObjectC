@@ -2,20 +2,20 @@
 +(void)changeFont:(UIControl*)control increaseFont:(BOOL)flag{
     NSInteger sizeLabel = 0;
     NSInteger sizeButton = 0;
-    if ([control isKindOfClass:[UIImageView class]]||[control isKindOfClass:[UIImageViewControl class]]){
+    if ([control isKindOfClass:[UIImageView class]]||[control isKindOfClass:[CustomImageView class]]){
         return;
     }
-    if ([control isKindOfClass:[UILabel class]]||[control isKindOfClass:[UILabelControl class]]){
+    if ([control isKindOfClass:[UILabel class]]||[control isKindOfClass:[CustomLabel class]]){
         UILabel *label = (UILabel*)control;
         label.font = [UIFont fontWithName:[UtilsFont fontName] size:label.font.pointSize+sizeLabel];
         return;
     }
-    if ([control isKindOfClass:[UIButton class]]||[control isKindOfClass:[UIButtonControl class]]){
+    if ([control isKindOfClass:[UIButton class]]||[control isKindOfClass:[CustomButton class]]){
         UIButton *button = (UIButton*)control;
         button.titleLabel.font = [UIFont fontWithName:[UtilsFont fontName] size:button.titleLabel.font.pointSize+sizeButton];
         return;
     }
-    if ([control isKindOfClass:[UITextField class]]||[control isKindOfClass:[UITextFieldControl class]]){
+    if ([control isKindOfClass:[UITextField class]]||[control isKindOfClass:[CustomTextField class]]){
         UITextField *txt = (UITextField*)control;
         txt.textColor = [UIColor colorWithRed:198/255.f green:160/255.f blue:64/255.f alpha:1];
         return;

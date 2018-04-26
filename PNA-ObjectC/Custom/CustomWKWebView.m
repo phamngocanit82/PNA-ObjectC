@@ -1,4 +1,4 @@
-@implementation WKWebViewControl
+@implementation CustomWKWebView
 -(void)setHTML:(NSString*)str{
     [self setBackgroundColor:[UIColor clearColor]];
     [self setOpaque:NO];

@@ -1,4 +1,4 @@
-@implementation UITextFieldControl
+@implementation CustomTextField
 #pragma mark - Initializer
 -(void)awakeFromNib{
     if(self.keyPlaceHolder!=nil){
@@ -7,7 +7,7 @@
     }
     [super awakeFromNib];
 }
--(NSString*)textTrimming{
+-(NSString*)trimming{
     return [self.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 }
 @end

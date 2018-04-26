@@ -1,4 +1,4 @@
-@implementation UILabelControl
+@implementation CustomLabel
 #pragma mark - Initializer
 -(void)awakeFromNib{
     if(self.keyLang!=nil){
@@ -15,6 +15,9 @@
             self.layer.cornerRadius = self.cornerRadius;
     }
     [super awakeFromNib];
+}
+-(NSString*)trimming{
+    return [self.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 }
 -(void)drawTextInRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();

@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
-@interface UILabelControl : UILabel
+IB_DESIGNABLE
+@interface CustomLabel : UILabel
 @property(copy)IBInspectable NSString *keyLang;
 @property(strong, nonatomic)IBInspectable UIColor *borderColor;
 @property(assign)IBInspectable NSInteger borderWidth;
@@ -7,4 +8,5 @@
 @property IBInspectable BOOL drawBorder;
 @property IBInspectable BOOL drawOutline;
 @property IBInspectable BOOL drawGradient;
+@property(copy) NSString *trimming;
 @end
