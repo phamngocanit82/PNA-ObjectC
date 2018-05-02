@@ -38,4 +38,6 @@
 +(BOOL)checkNumeric:(NSString *)strText;
 
 +(NSString*)getNumberFormatter:(NSNumber*)value;
+
++(void)log:(NSString *)strText;
 @end

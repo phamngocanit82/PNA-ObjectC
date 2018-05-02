@@ -24,7 +24,7 @@ target 'PNA-ObjectC' do
     pod 'DGActivityIndicatorView'
     pod 'EGOTableViewPullRefreshAndLoadMore'
     pod 'SocketIO'
-
+    pod 'SWRevealViewController'
   target 'PNA-ObjectCTests' do
     inherit! :search_paths
     # Pods for testing

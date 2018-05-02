@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		10BCA112A30B6718335DD0C4 /* libPods-PNA-ObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8390E9C0FD214C665B34B9 /* libPods-PNA-ObjectC.a */; };
+		6629B32220997535004D5D88 /* ExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6629B32120997535004D5D88 /* ExampleController.m */; };
+		66636B9D2099AABF00699A4B /* Examples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66636B9B2099AABF00699A4B /* Examples.storyboard */; };
+		66636BA12099AE2600699A4B /* QRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66636BA02099AE2600699A4B /* QRCodeController.m */; };
+		66636BA42099AE3500699A4B /* YoutubeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66636BA32099AE3500699A4B /* YoutubeController.m */; };
+		66636BA72099AE4600699A4B /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66636BA62099AE4600699A4B /* CameraController.m */; };
+		66636BAA2099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = 66636BA92099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.m */; };
+		A14781852097301000011801 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14781842097300F00011801 /* MenuController.m */; };
 		A1697ED7208A3B95009119F1 /* tables.json in Resources */ = {isa = PBXBuildFile; fileRef = A1697ED6208A3B95009119F1 /* tables.json */; };
 		A1697ED9208A3D51009119F1 /* PNA.db in Resources */ = {isa = PBXBuildFile; fileRef = A1697ED8208A3D51009119F1 /* PNA.db */; };
 		A1697EDC208A3E2A009119F1 /* DownloadService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1697EDA208A3E2A009119F1 /* DownloadService.m */; };
@@ -71,7 +78,20 @@
 		0A8390E9C0FD214C665B34B9 /* libPods-PNA-ObjectC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PNA-ObjectC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F599D5D1ACA69CB0972306 /* Pods-PNA-ObjectCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-ObjectCUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-ObjectCUITests/Pods-PNA-ObjectCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		647DA4D2BF46769F8670C0EC /* libPods-PNA-ObjectCUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PNA-ObjectCUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6629B32020997535004D5D88 /* ExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleController.h; sourceTree = "<group>"; };
+		6629B32120997535004D5D88 /* ExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleController.m; sourceTree = "<group>"; };
+		66636B9C2099AABF00699A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Examples.storyboard; sourceTree = "<group>"; };
+		66636B9F2099AE2600699A4B /* QRCodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeController.h; sourceTree = "<group>"; };
+		66636BA02099AE2600699A4B /* QRCodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeController.m; sourceTree = "<group>"; };
+		66636BA22099AE3500699A4B /* YoutubeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoutubeController.h; sourceTree = "<group>"; };
+		66636BA32099AE3500699A4B /* YoutubeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoutubeController.m; sourceTree = "<group>"; };
+		66636BA52099AE4600699A4B /* CameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		66636BA62099AE4600699A4B /* CameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
+		66636BA82099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPMoviePlayerController+BackgroundPlayback.h"; sourceTree = "<group>"; };
+		66636BA92099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPMoviePlayerController+BackgroundPlayback.m"; sourceTree = "<group>"; };
 		7F114B93C8CF0AA2090393DA /* Pods-PNA-ObjectCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-ObjectCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-ObjectCTests/Pods-PNA-ObjectCTests.release.xcconfig"; sourceTree = "<group>"; };
+		A14781832097300F00011801 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
+		A14781842097300F00011801 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		A1697ED6208A3B95009119F1 /* tables.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tables.json; sourceTree = "<group>"; };
 		A1697ED8208A3D51009119F1 /* PNA.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PNA.db; sourceTree = "<group>"; };
 		A1697EDA208A3E2A009119F1 /* DownloadService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadService.m; sourceTree = "<group>"; };
@@ -83,7 +103,7 @@
 		A1697EE6208A49F0009119F1 /* UtilsPlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsPlatform.m; sourceTree = "<group>"; };
 		A1697EE8208A4B34009119F1 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		A1697EE9208A4B34009119F1 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
-		A1697EEB208A4B88009119F1 /* HeaderControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderControls.h; sourceTree = "<group>"; };
+		A1697EEB208A4B88009119F1 /* CustomHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomHeader.h; sourceTree = "<group>"; };
 		A1697EEC208A4BFE009119F1 /* CustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLabel.h; sourceTree = "<group>"; };
 		A1697EED208A4BFE009119F1 /* CustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLabel.m; sourceTree = "<group>"; };
 		A1697EEF208A4CC6009119F1 /* LanguageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageService.h; sourceTree = "<group>"; };
@@ -194,6 +214,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		66636B9E2099ADEB00699A4B /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				6629B32020997535004D5D88 /* ExampleController.h */,
+				6629B32120997535004D5D88 /* ExampleController.m */,
+				66636B9F2099AE2600699A4B /* QRCodeController.h */,
+				66636BA02099AE2600699A4B /* QRCodeController.m */,
+				66636BA22099AE3500699A4B /* YoutubeController.h */,
+				66636BA32099AE3500699A4B /* YoutubeController.m */,
+				66636BA52099AE4600699A4B /* CameraController.h */,
+				66636BA62099AE4600699A4B /* CameraController.m */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
 		A1FB7E66208649A800024C33 = {
 			isa = PBXGroup;
 			children = (
@@ -228,9 +263,8 @@
 				A1FB7EAC20864A5D00024C33 /* Controller */,
 				A1FB7E72208649A800024C33 /* AppDelegate.h */,
 				A1FB7E73208649A800024C33 /* AppDelegate.m */,
-				A1FB7E75208649A800024C33 /* ViewController.h */,
-				A1FB7E76208649A800024C33 /* ViewController.m */,
 				A1FB7E78208649A800024C33 /* Main.storyboard */,
+				66636B9B2099AABF00699A4B /* Examples.storyboard */,
 				A1FB7E7E208649A800024C33 /* Assets.xcassets */,
 				A1FB7E80208649A800024C33 /* LaunchScreen.storyboard */,
 				A1FB7E83208649A800024C33 /* Info.plist */,
@@ -287,6 +321,8 @@
 				A1FB7EBD20864BA700024C33 /* PDKeychainBindings.m */,
 				A1FB7EBF20864BA700024C33 /* PDKeychainBindingsController.h */,
 				A1FB7EBE20864BA700024C33 /* PDKeychainBindingsController.m */,
+				66636BA82099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.h */,
+				66636BA92099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.m */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -325,14 +361,19 @@
 		A1FB7EAC20864A5D00024C33 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				66636B9E2099ADEB00699A4B /* Examples */,
 				A1CA160E208B0C17006B3AAF /* PrevViewControllerSegue.h */,
 				A1CA160F208B0C17006B3AAF /* PrevViewControllerSegue.m */,
 				A1CA1611208B0C30006B3AAF /* RefreshTableHeaderController.h */,
 				A1CA1612208B0C30006B3AAF /* RefreshTableHeaderController.m */,
 				A1CA1614208B0D3D006B3AAF /* ProcessKeyboardController.h */,
 				A1CA1615208B0D3D006B3AAF /* ProcessKeyboardController.m */,
+				A1FB7E75208649A800024C33 /* ViewController.h */,
+				A1FB7E76208649A800024C33 /* ViewController.m */,
 				A1CA160B208B0A50006B3AAF /* MainController.h */,
 				A1CA160C208B0A50006B3AAF /* MainController.m */,
+				A14781832097300F00011801 /* MenuController.h */,
+				A14781842097300F00011801 /* MenuController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -348,7 +389,7 @@
 		A1FB7EAE20864A6A00024C33 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				A1697EEB208A4B88009119F1 /* HeaderControls.h */,
+				A1697EEB208A4B88009119F1 /* CustomHeader.h */,
 				A1CA15FB208B0219006B3AAF /* CustomWKWebView.h */,
 				A1CA15FC208B0219006B3AAF /* CustomWKWebView.m */,
 				A1CA1603208B0359006B3AAF /* CustomVideo.h */,
@@ -399,6 +440,7 @@
 				A1FB7E6C208649A800024C33 /* Frameworks */,
 				A1FB7E6D208649A800024C33 /* Resources */,
 				EDD14B37BFC09300423BCE61 /* [CP] Copy Pods Resources */,
+				9DBCAC1CC2A9DC83A0BE92A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -417,6 +459,8 @@
 				A1FB7E86208649A800024C33 /* Sources */,
 				A1FB7E87208649A800024C33 /* Frameworks */,
 				A1FB7E88208649A800024C33 /* Resources */,
+				80426F389738F96DDC277E20 /* [CP] Embed Pods Frameworks */,
+				9491945C22790F54BDF8F145 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -436,6 +480,8 @@
 				A1FB7E91208649A800024C33 /* Sources */,
 				A1FB7E92208649A800024C33 /* Frameworks */,
 				A1FB7E93208649A800024C33 /* Resources */,
+				F51368BB504B143B36E35320 /* [CP] Embed Pods Frameworks */,
+				34FCC9B0891BF8F5C5CF311D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -498,6 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1697ED9208A3D51009119F1 /* PNA.db in Resources */,
+				66636B9D2099AABF00699A4B /* Examples.storyboard in Resources */,
 				A1FB7E82208649A800024C33 /* LaunchScreen.storyboard in Resources */,
 				A1FB7E7F208649A800024C33 /* Assets.xcassets in Resources */,
 				A1697ED7208A3B95009119F1 /* tables.json in Resources */,
@@ -541,6 +588,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		34FCC9B0891BF8F5C5CF311D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNA-ObjectCUITests/Pods-PNA-ObjectCUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		63437A5FC13A42C89C80E23A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -575,6 +637,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80426F389738F96DDC277E20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNA-ObjectCTests/Pods-PNA-ObjectCTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9491945C22790F54BDF8F145 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNA-ObjectCTests/Pods-PNA-ObjectCTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DBCAC1CC2A9DC83A0BE92A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNA-ObjectC/Pods-PNA-ObjectC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EDD14B37BFC09300423BCE61 /* [CP] Copy Pods Resources */ = {
@@ -635,6 +742,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNA-ObjectC/Pods-PNA-ObjectC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F51368BB504B143B36E35320 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNA-ObjectCUITests/Pods-PNA-ObjectCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -642,6 +764,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A14781852097301000011801 /* MenuController.m in Sources */,
 				A1697EFD208A52CF009119F1 /* CustomButton.m in Sources */,
 				A1CA160D208B0A50006B3AAF /* MainController.m in Sources */,
 				A1697EF1208A4CC6009119F1 /* LanguageService.m in Sources */,
@@ -652,6 +775,8 @@
 				A1697EEA208A4B34009119F1 /* CustomView.m in Sources */,
 				A1FB7E7D208649A800024C33 /* PNA_ObjectC.xcdatamodeld in Sources */,
 				A1CA1610208B0C17006B3AAF /* PrevViewControllerSegue.m in Sources */,
+				66636BA12099AE2600699A4B /* QRCodeController.m in Sources */,
+				66636BAA2099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.m in Sources */,
 				A1CA1616208B0D3D006B3AAF /* ProcessKeyboardController.m in Sources */,
 				A1CA161C208B0F58006B3AAF /* Utils.m in Sources */,
 				A1FF34B4208A394A00EC98DD /* ConnectionService.m in Sources */,
@@ -663,9 +788,12 @@
 				A1FB7E85208649A800024C33 /* main.m in Sources */,
 				A1697EF7208A5019009119F1 /* UtilsFont.m in Sources */,
 				A1FB7EC120864BA700024C33 /* PDKeychainBindings.m in Sources */,
+				6629B32220997535004D5D88 /* ExampleController.m in Sources */,
 				A1FB7E74208649A800024C33 /* AppDelegate.m in Sources */,
 				A1FF34B1208A38B400EC98DD /* SQLiteService.m in Sources */,
+				66636BA72099AE4600699A4B /* CameraController.m in Sources */,
 				A1FB7EC220864BA700024C33 /* PDKeychainBindingsController.m in Sources */,
+				66636BA42099AE3500699A4B /* YoutubeController.m in Sources */,
 				A1FB7EC020864BA700024C33 /* ActivityViewController.m in Sources */,
 				A1CA1604208B035A006B3AAF /* CustomVideo.m in Sources */,
 				A1CA1613208B0C30006B3AAF /* RefreshTableHeaderController.m in Sources */,
@@ -704,6 +832,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		66636B9B2099AABF00699A4B /* Examples.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66636B9C2099AABF00699A4B /* Base */,
+			);
+			name = Examples.storyboard;
+			sourceTree = "<group>";
+		};
 		A1FB7E78208649A800024C33 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

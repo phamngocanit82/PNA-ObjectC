@@ -203,4 +203,7 @@
     else
     return [NSString stringWithFormat:@"%@",[formatterCurrency stringFromNumber:@([value integerValue])]];
 }
++(void)log:(NSString *)strText{
+    NSLog(strText);
+}
 @end

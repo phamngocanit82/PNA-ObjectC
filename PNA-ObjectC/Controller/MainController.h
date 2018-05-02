@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MainController : UIViewController
-
+@interface MainController : ViewController
+@property (weak, nonatomic) IBOutlet CustomButton *menuButton;
 @end
+

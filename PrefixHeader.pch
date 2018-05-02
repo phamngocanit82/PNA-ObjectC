@@ -13,6 +13,12 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import "NSDictionary_JSONExtensions.h"
 #import "AESCrypt.h"
+
+#import "CustomHeader.h"
+#import "ViewController.h"
+#import "SWRevealViewController.h"
+#import "AppDelegate.h"
+
 #import "Utils.h"
 #import "UtilsPlatform.h"
 #import "UtilsCache.h"
@@ -22,8 +28,8 @@
 #import "ConnectionService.h"
 #import "DownloadService.h"
 #import "LanguageService.h"
-#import "HeaderControls.h"
-#import "AppDelegate.h"
+
+
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
@@ -37,4 +43,5 @@
 #define VIDEO_MOV @"video"
 #define DecimalDigit 2
 #define appDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+#define CHECK_VALID_EMAIL 111
 #endif /* PrefixHeader_pch */

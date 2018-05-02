@@ -78,12 +78,10 @@
     return YES;
 }
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    /*if(textField.tag==111){
-        NSPredicate *regExPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", [MILConfigModel sharedInstance].special_chars_excluding];
+    if(textField.tag==CHECK_VALID_EMAIL){
         if([string length]>0){
-            if([regExPredicate evaluateWithObject:string]){
+            if([Utils checkEmail:string])
                 return NO;
-            }
         }
     }else if (textField.tag>0) {
         string = [string stringByReplacingOccurrencesOfString:@"," withString:@"."];
@@ -92,7 +90,7 @@
                 return NO;
             }
         }
-        if([MILUtils checkNumeric:string]==NO){
+        if([Utils checkNumeric:string]==NO){
             return NO;
         }
         NSString * searchStr = [textField.text stringByReplacingCharactersInRange:range withString:string];
@@ -102,7 +100,7 @@
             activeField.text = [searchStr stringByReplacingOccurrencesOfString:@"," withString:@"."];
             return NO;
         }
-    }*/
+    }
     return YES;
 }
 -(void)moveView{

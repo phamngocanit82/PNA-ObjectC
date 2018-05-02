@@ -6,8 +6,8 @@
 //  Copyright © 2018 An. All rights reserved.
 //
 
-#ifndef HeaderControls_h
-#define HeaderControls_h
+#ifndef CustomHeader_h
+#define CustomHeader_h
 #import "CustomView.h"
 #import "CustomLabel.h"
 #import "CustomButton.h"
@@ -16,4 +16,4 @@
 #import "CustomWKWebView.h"
 #import "CustomVideo.h"
 
-#endif /* HeaderControls_h */
+#endif /* CustomHeader_h */

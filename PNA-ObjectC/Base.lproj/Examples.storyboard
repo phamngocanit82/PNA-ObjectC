@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example Controller-->
+        <scene sceneID="jf0-iv-wPf">
+            <objects>
+                <viewController storyboardIdentifier="ExampleController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iKq-ks-pqv" customClass="ExampleController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tfP-UJ-uX6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CP-IK-hPU" customClass="CustomButton">
+                                <rect key="frame" x="10" y="10" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PR8-te-ydd"/>
+                                    <constraint firstAttribute="width" constant="44" id="rmh-5O-bGE"/>
+                                </constraints>
+                                <state key="normal" image="reveal-icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VI2-vw-3Zo" customClass="CustomButton">
+                                <rect key="frame" x="29" y="57" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="dDf-7N-Pts"/>
+                                    <constraint firstAttribute="height" constant="30" id="wMF-PP-Yc2"/>
+                                </constraints>
+                                <state key="normal" title="Socket"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raK-36-TGs" customClass="CustomButton">
+                                <rect key="frame" x="137" y="57" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="J6z-ae-1Qr"/>
+                                    <constraint firstAttribute="height" constant="30" id="znL-mJ-ZcJ"/>
+                                </constraints>
+                                <state key="normal" title="QRCode"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Vhv-xn-58a" kind="push" id="iWE-Nt-j7Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMl-kz-MJB" customClass="CustomButton">
+                                <rect key="frame" x="245" y="57" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="91J-EV-wDO"/>
+                                    <constraint firstAttribute="height" constant="30" id="ycp-st-Gzo"/>
+                                </constraints>
+                                <state key="normal" title="Camera"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-uV-FgH" customClass="CustomButton">
+                                <rect key="frame" x="29" y="107" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Youtube"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Jrp-vm-fDO" kind="push" id="dcG-zl-sp4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kf-IG-1KB" customClass="CustomButton">
+                                <rect key="frame" x="137" y="107" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Facebook"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhr-dL-c4d" customClass="CustomButton">
+                                <rect key="frame" x="245" y="106" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Facebook"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsw-qG-y0I" customClass="CustomButton">
+                                <rect key="frame" x="29" y="156" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Facebook"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yy-qz-Kpp" customClass="CustomButton">
+                                <rect key="frame" x="137" y="155" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Twitter"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikV-Sb-WYp" customClass="CustomButton">
+                                <rect key="frame" x="245" y="156" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Twitter"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VI2-vw-3Zo" firstAttribute="top" secondItem="tfP-UJ-uX6" secondAttribute="topMargin" constant="37" id="0R5-zh-epH"/>
+                            <constraint firstItem="raK-36-TGs" firstAttribute="leading" secondItem="VI2-vw-3Zo" secondAttribute="trailing" constant="8" id="3IC-sq-y6I"/>
+                            <constraint firstItem="raK-36-TGs" firstAttribute="centerX" secondItem="tfP-UJ-uX6" secondAttribute="centerX" id="GlL-oD-RqL"/>
+                            <constraint firstItem="8CP-IK-hPU" firstAttribute="leading" secondItem="TST-TV-zkk" secondAttribute="leading" constant="10" id="Tzm-1B-KrK"/>
+                            <constraint firstItem="8CP-IK-hPU" firstAttribute="top" secondItem="tfP-UJ-uX6" secondAttribute="top" constant="10" id="Z2W-Qn-WQj"/>
+                            <constraint firstItem="ZMl-kz-MJB" firstAttribute="leading" secondItem="raK-36-TGs" secondAttribute="trailing" constant="8" id="jfo-Ac-rfw"/>
+                            <constraint firstItem="raK-36-TGs" firstAttribute="top" secondItem="TST-TV-zkk" secondAttribute="top" constant="37" id="sI2-2b-IJr"/>
+                            <constraint firstItem="ZMl-kz-MJB" firstAttribute="top" secondItem="TST-TV-zkk" secondAttribute="top" constant="37" id="toS-kt-xVt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TST-TV-zkk"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuButton" destination="8CP-IK-hPU" id="d7X-Ej-fRb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djB-co-R1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="199.25037481259372"/>
+        </scene>
+        <!--Youtube Controller-->
+        <scene sceneID="ceP-UO-WF7">
+            <objects>
+                <viewController id="Jrp-vm-fDO" customClass="YoutubeController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TDd-qk-jvV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Yhg-MN-1es"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EQC-d9-Vuc"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C39-Wu-eMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="199"/>
+        </scene>
+        <!--Code Controller-->
+        <scene sceneID="4bX-VX-hTH">
+            <objects>
+                <viewController id="Vhv-xn-58a" customClass="QRCodeController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SRi-6J-bSc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quR-wg-JKM" customClass="CustomButton">
+                                <rect key="frame" x="137.5" y="387" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="M3Y-ah-Fb3"/>
+                                    <constraint firstAttribute="width" constant="100" id="Ui4-gh-yIr"/>
+                                </constraints>
+                                <state key="normal" title="Start!"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionScan:" destination="Vhv-xn-58a" eventType="touchUpInside" id="cKw-bY-eAt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanning for QR Code..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNj-hb-jRO">
+                                <rect key="frame" x="39" y="345" width="297" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OyF-0a-FRd"/>
+                                    <constraint firstAttribute="width" constant="297" id="vna-VM-Ryp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGc-cA-PLD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="314"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="314" id="0RL-KY-jNs"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eT6-vS-fZW">
+                                <rect key="frame" x="138" y="434" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Uvu-6S-6eV"/>
+                                    <constraint firstAttribute="height" constant="100" id="vDT-Ax-Xpp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="quR-wg-JKM" firstAttribute="centerX" secondItem="SRi-6J-bSc" secondAttribute="centerX" id="9fV-Dy-ceF"/>
+                            <constraint firstItem="TGc-cA-PLD" firstAttribute="trailing" secondItem="Ove-RC-aL1" secondAttribute="trailing" id="Atd-OC-42v"/>
+                            <constraint firstItem="TGc-cA-PLD" firstAttribute="leading" secondItem="Ove-RC-aL1" secondAttribute="leading" id="HUi-MU-3dx"/>
+                            <constraint firstItem="eT6-vS-fZW" firstAttribute="top" secondItem="quR-wg-JKM" secondAttribute="bottom" constant="17" id="KiN-oS-Fij"/>
+                            <constraint firstItem="TGc-cA-PLD" firstAttribute="top" secondItem="SRi-6J-bSc" secondAttribute="top" id="O22-AX-BRQ"/>
+                            <constraint firstItem="qNj-hb-jRO" firstAttribute="centerX" secondItem="SRi-6J-bSc" secondAttribute="centerX" id="eCx-1v-5jm"/>
+                            <constraint firstItem="eT6-vS-fZW" firstAttribute="centerX" secondItem="SRi-6J-bSc" secondAttribute="centerX" id="phy-RD-0MP"/>
+                            <constraint firstItem="qNj-hb-jRO" firstAttribute="top" secondItem="TGc-cA-PLD" secondAttribute="bottom" constant="31" id="uxt-z5-77w"/>
+                            <constraint firstItem="quR-wg-JKM" firstAttribute="top" secondItem="qNj-hb-jRO" secondAttribute="bottom" constant="21" id="z7w-qF-QQm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ove-RC-aL1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2OA-RU-2Ke"/>
+                    <connections>
+                        <outlet property="qrcodeImageView" destination="eT6-vS-fZW" id="bTZ-Bh-xja"/>
+                        <outlet property="qrcodeView" destination="TGc-cA-PLD" id="cGw-ZQ-1Hu"/>
+                        <outlet property="scanButton" destination="quR-wg-JKM" id="DDj-ON-FNS"/>
+                        <outlet property="statusLabel" destination="qNj-hb-jRO" id="qah-ru-hoh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYB-AL-xSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="197.45127436281859"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="reveal-icon" width="22" height="17"/>
+    </resources>
+</document>

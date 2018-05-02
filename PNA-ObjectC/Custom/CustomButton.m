@@ -3,7 +3,7 @@
 -(instancetype)initWithCoder:(NSCoder *)decoder {
     self = [super initWithCoder:decoder];
     if (self) {
-        self.titleLabel.textColor = [UIColor whiteColor];
+        [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [self addTarget:self action:@selector(touchUpInside) forControlEvents:UIControlEventTouchUpInside];
         [self addTarget:self action:@selector(touchDownButton) forControlEvents:UIControlEventTouchDown];
         [self addTarget:self action:@selector(touchDragOutside) forControlEvents:UIControlEventTouchDragOutside];
