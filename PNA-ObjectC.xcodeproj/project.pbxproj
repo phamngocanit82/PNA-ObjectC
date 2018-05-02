@@ -21,6 +21,7 @@
 		A13DA4B92099FF6300A8BFB1 /* FaceBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4B82099FF6300A8BFB1 /* FaceBookController.m */; };
 		A13DA4BC2099FFE100A8BFB1 /* TwitterController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4BB2099FFE100A8BFB1 /* TwitterController.m */; };
 		A13DA4BF209A019600A8BFB1 /* InstagramController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4BE209A019600A8BFB1 /* InstagramController.m */; };
+		A13DA4C2209A02F300A8BFB1 /* GoogleMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4C1209A02F300A8BFB1 /* GoogleMapController.m */; };
 		A14781852097301000011801 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14781842097300F00011801 /* MenuController.m */; };
 		A1697ED7208A3B95009119F1 /* tables.json in Resources */ = {isa = PBXBuildFile; fileRef = A1697ED6208A3B95009119F1 /* tables.json */; };
 		A1697ED9208A3D51009119F1 /* PNA.db in Resources */ = {isa = PBXBuildFile; fileRef = A1697ED8208A3D51009119F1 /* PNA.db */; };
@@ -113,6 +114,8 @@
 		A13DA4BB2099FFE100A8BFB1 /* TwitterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterController.m; sourceTree = "<group>"; };
 		A13DA4BD209A019600A8BFB1 /* InstagramController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstagramController.h; sourceTree = "<group>"; };
 		A13DA4BE209A019600A8BFB1 /* InstagramController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagramController.m; sourceTree = "<group>"; };
+		A13DA4C0209A02F300A8BFB1 /* GoogleMapController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMapController.h; sourceTree = "<group>"; };
+		A13DA4C1209A02F300A8BFB1 /* GoogleMapController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleMapController.m; sourceTree = "<group>"; };
 		A14781832097300F00011801 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
 		A14781842097300F00011801 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		A1697ED6208A3B95009119F1 /* tables.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tables.json; sourceTree = "<group>"; };
@@ -256,6 +259,8 @@
 				A13DA4BB2099FFE100A8BFB1 /* TwitterController.m */,
 				A13DA4BD209A019600A8BFB1 /* InstagramController.h */,
 				A13DA4BE209A019600A8BFB1 /* InstagramController.m */,
+				A13DA4C0209A02F300A8BFB1 /* GoogleMapController.h */,
+				A13DA4C1209A02F300A8BFB1 /* GoogleMapController.m */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -877,6 +882,7 @@
 				A1FB7EC220864BA700024C33 /* PDKeychainBindingsController.m in Sources */,
 				66636BA42099AE3500699A4B /* YoutubeController.m in Sources */,
 				A1FB7EC020864BA700024C33 /* ActivityViewController.m in Sources */,
+				A13DA4C2209A02F300A8BFB1 /* GoogleMapController.m in Sources */,
 				A1CA1604208B035A006B3AAF /* CustomVideo.m in Sources */,
 				A1CA1613208B0C30006B3AAF /* RefreshTableHeaderController.m in Sources */,
 			);

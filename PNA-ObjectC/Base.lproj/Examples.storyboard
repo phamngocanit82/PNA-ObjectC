@@ -111,9 +111,12 @@
                                     <segue destination="qlx-A3-PTo" kind="push" id="fLK-Vn-LIG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsw-qG-y0I" customClass="CustomButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsw-qG-y0I" customClass="CustomButton">
                                 <rect key="frame" x="29" y="156" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="l1a-h0-ngs"/>
+                                    <constraint firstAttribute="width" constant="100" id="qtE-Rn-Gid"/>
+                                </constraints>
                                 <state key="normal" title="Instagram"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
@@ -122,16 +125,26 @@
                                     <segue destination="0ae-mh-lk1" kind="push" id="x5Z-v2-ruz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yy-qz-Kpp" customClass="CustomButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yy-qz-Kpp" customClass="CustomButton">
                                 <rect key="frame" x="137" y="155" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cd6-yh-4lc"/>
+                                    <constraint firstAttribute="width" constant="100" id="dwJ-7S-Gcg"/>
+                                </constraints>
+                                <state key="normal" title="Google map"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="fSq-ol-1Nc" kind="push" id="RQ7-gj-h1l"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikV-Sb-WYp" customClass="CustomButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikV-Sb-WYp" customClass="CustomButton">
                                 <rect key="frame" x="245" y="156" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hdQ-iu-TQs"/>
+                                    <constraint firstAttribute="height" constant="30" id="yfI-I2-ej7"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -142,14 +155,20 @@
                             <constraint firstItem="VI2-vw-3Zo" firstAttribute="top" secondItem="tfP-UJ-uX6" secondAttribute="topMargin" constant="37" id="0R5-zh-epH"/>
                             <constraint firstItem="7kf-IG-1KB" firstAttribute="centerX" secondItem="tfP-UJ-uX6" secondAttribute="centerX" id="0sy-eV-ReW"/>
                             <constraint firstItem="raK-36-TGs" firstAttribute="leading" secondItem="VI2-vw-3Zo" secondAttribute="trailing" constant="8" id="3IC-sq-y6I"/>
+                            <constraint firstItem="fsw-qG-y0I" firstAttribute="top" secondItem="L5h-uV-FgH" secondAttribute="bottom" constant="19" id="4Yb-1o-ti7"/>
                             <constraint firstItem="L5h-uV-FgH" firstAttribute="top" secondItem="VI2-vw-3Zo" secondAttribute="bottom" constant="20" id="5yd-gr-zTg"/>
+                            <constraint firstItem="ikV-Sb-WYp" firstAttribute="top" secondItem="Yhr-dL-c4d" secondAttribute="bottom" constant="20" id="BGX-dO-fBE"/>
                             <constraint firstItem="raK-36-TGs" firstAttribute="centerX" secondItem="tfP-UJ-uX6" secondAttribute="centerX" id="GlL-oD-RqL"/>
                             <constraint firstItem="8CP-IK-hPU" firstAttribute="leading" secondItem="TST-TV-zkk" secondAttribute="leading" constant="10" id="Tzm-1B-KrK"/>
                             <constraint firstItem="8CP-IK-hPU" firstAttribute="top" secondItem="tfP-UJ-uX6" secondAttribute="top" constant="10" id="Z2W-Qn-WQj"/>
+                            <constraint firstItem="5yy-qz-Kpp" firstAttribute="top" secondItem="7kf-IG-1KB" secondAttribute="bottom" constant="18" id="ZO2-Td-jGR"/>
                             <constraint firstItem="7kf-IG-1KB" firstAttribute="top" secondItem="raK-36-TGs" secondAttribute="bottom" constant="20" id="ZWO-dF-MHR"/>
+                            <constraint firstItem="ikV-Sb-WYp" firstAttribute="leading" secondItem="5yy-qz-Kpp" secondAttribute="trailing" constant="8" id="dSV-d7-kXQ"/>
                             <constraint firstItem="Yhr-dL-c4d" firstAttribute="top" secondItem="ZMl-kz-MJB" secondAttribute="bottom" constant="19" id="gay-dq-mW3"/>
                             <constraint firstItem="Yhr-dL-c4d" firstAttribute="leading" secondItem="7kf-IG-1KB" secondAttribute="trailing" constant="8" id="hqb-xs-8cc"/>
                             <constraint firstItem="ZMl-kz-MJB" firstAttribute="leading" secondItem="raK-36-TGs" secondAttribute="trailing" constant="8" id="jfo-Ac-rfw"/>
+                            <constraint firstItem="5yy-qz-Kpp" firstAttribute="centerX" secondItem="tfP-UJ-uX6" secondAttribute="centerX" id="jlv-6c-hnY"/>
+                            <constraint firstItem="5yy-qz-Kpp" firstAttribute="leading" secondItem="fsw-qG-y0I" secondAttribute="trailing" constant="8" id="k06-Yd-cOX"/>
                             <constraint firstItem="7kf-IG-1KB" firstAttribute="leading" secondItem="L5h-uV-FgH" secondAttribute="trailing" constant="8" id="nd7-uo-3u5"/>
                             <constraint firstItem="raK-36-TGs" firstAttribute="top" secondItem="TST-TV-zkk" secondAttribute="top" constant="37" id="sI2-2b-IJr"/>
                             <constraint firstItem="ZMl-kz-MJB" firstAttribute="top" secondItem="TST-TV-zkk" secondAttribute="top" constant="37" id="toS-kt-xVt"/>
@@ -333,6 +352,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYB-AL-xSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1038" y="167"/>
+        </scene>
+        <!--GoogleMap-->
+        <scene sceneID="keo-sI-pXG">
+            <objects>
+                <viewController id="fSq-ol-1Nc" customClass="GoogleMapController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2LG-SS-KBq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="MHl-jl-jgW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GoogleMap" id="728-PU-aJo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekf-gt-0Nb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="1522"/>
         </scene>
     </scenes>
     <resources>
