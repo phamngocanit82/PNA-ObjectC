@@ -41,5 +41,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>to connect devices</string>
+    <key>NSCalendarsUsageDescription</key>
+    <string>to update your plan</string>
+    <key>NSCameraUsageDescription</key>
+    <string> to take photo for avatars</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string></string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>to get information from blippar</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>to update avatar of users</string>
 </dict>
 </plist>

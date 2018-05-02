@@ -32,6 +32,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>DBCamera.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>29</integer>
+		</dict>
 		<key>DGActivityIndicatorView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -73,6 +78,11 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>9</integer>
+		</dict>
+		<key>GPUImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>30</integer>
 		</dict>
 		<key>GTMNSString-HTML.xcscheme</key>
 		<dict>
@@ -164,6 +174,11 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>25</integer>
+		</dict>
+		<key>SWRevealViewController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>31</integer>
 		</dict>
 		<key>SocketIO-SocketIO.xcscheme</key>
 		<dict>

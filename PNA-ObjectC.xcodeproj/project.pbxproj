@@ -14,6 +14,13 @@
 		66636BA42099AE3500699A4B /* YoutubeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66636BA32099AE3500699A4B /* YoutubeController.m */; };
 		66636BA72099AE4600699A4B /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66636BA62099AE4600699A4B /* CameraController.m */; };
 		66636BAA2099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = 66636BA92099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.m */; };
+		66636BAE2099CC7100699A4B /* SocketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66636BAD2099CC7100699A4B /* SocketController.m */; };
+		A13DA4B22099F68400A8BFB1 /* CustomCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4AC2099F68300A8BFB1 /* CustomCamera.m */; };
+		A13DA4B32099F68400A8BFB1 /* DBCameraConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4B12099F68400A8BFB1 /* DBCameraConfiguration.m */; };
+		A13DA4B62099F96500A8BFB1 /* CameraNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4B52099F96500A8BFB1 /* CameraNavigationController.m */; };
+		A13DA4B92099FF6300A8BFB1 /* FaceBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4B82099FF6300A8BFB1 /* FaceBookController.m */; };
+		A13DA4BC2099FFE100A8BFB1 /* TwitterController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4BB2099FFE100A8BFB1 /* TwitterController.m */; };
+		A13DA4BF209A019600A8BFB1 /* InstagramController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4BE209A019600A8BFB1 /* InstagramController.m */; };
 		A14781852097301000011801 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14781842097300F00011801 /* MenuController.m */; };
 		A1697ED7208A3B95009119F1 /* tables.json in Resources */ = {isa = PBXBuildFile; fileRef = A1697ED6208A3B95009119F1 /* tables.json */; };
 		A1697ED9208A3D51009119F1 /* PNA.db in Resources */ = {isa = PBXBuildFile; fileRef = A1697ED8208A3D51009119F1 /* PNA.db */; };
@@ -89,7 +96,23 @@
 		66636BA62099AE4600699A4B /* CameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
 		66636BA82099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPMoviePlayerController+BackgroundPlayback.h"; sourceTree = "<group>"; };
 		66636BA92099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPMoviePlayerController+BackgroundPlayback.m"; sourceTree = "<group>"; };
+		66636BAC2099CC7100699A4B /* SocketController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketController.h; sourceTree = "<group>"; };
+		66636BAD2099CC7100699A4B /* SocketController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketController.m; sourceTree = "<group>"; };
 		7F114B93C8CF0AA2090393DA /* Pods-PNA-ObjectCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-ObjectCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-ObjectCTests/Pods-PNA-ObjectCTests.release.xcconfig"; sourceTree = "<group>"; };
+		A13DA4AC2099F68300A8BFB1 /* CustomCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCamera.m; sourceTree = "<group>"; };
+		A13DA4AD2099F68300A8BFB1 /* CustomCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCamera.h; sourceTree = "<group>"; };
+		A13DA4AE2099F68300A8BFB1 /* DBCameraConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraConfiguration.h; sourceTree = "<group>"; };
+		A13DA4AF2099F68400A8BFB1 /* DBCameraControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraControllerProtocol.h; sourceTree = "<group>"; };
+		A13DA4B02099F68400A8BFB1 /* DBPhotoProcessingControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPhotoProcessingControllerProtocol.h; sourceTree = "<group>"; };
+		A13DA4B12099F68400A8BFB1 /* DBCameraConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraConfiguration.m; sourceTree = "<group>"; };
+		A13DA4B42099F96500A8BFB1 /* CameraNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraNavigationController.h; sourceTree = "<group>"; };
+		A13DA4B52099F96500A8BFB1 /* CameraNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraNavigationController.m; sourceTree = "<group>"; };
+		A13DA4B72099FF6300A8BFB1 /* FaceBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceBookController.h; sourceTree = "<group>"; };
+		A13DA4B82099FF6300A8BFB1 /* FaceBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceBookController.m; sourceTree = "<group>"; };
+		A13DA4BA2099FFE100A8BFB1 /* TwitterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterController.h; sourceTree = "<group>"; };
+		A13DA4BB2099FFE100A8BFB1 /* TwitterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterController.m; sourceTree = "<group>"; };
+		A13DA4BD209A019600A8BFB1 /* InstagramController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstagramController.h; sourceTree = "<group>"; };
+		A13DA4BE209A019600A8BFB1 /* InstagramController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagramController.m; sourceTree = "<group>"; };
 		A14781832097300F00011801 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
 		A14781842097300F00011801 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		A1697ED6208A3B95009119F1 /* tables.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tables.json; sourceTree = "<group>"; };
@@ -225,8 +248,31 @@
 				66636BA32099AE3500699A4B /* YoutubeController.m */,
 				66636BA52099AE4600699A4B /* CameraController.h */,
 				66636BA62099AE4600699A4B /* CameraController.m */,
+				66636BAC2099CC7100699A4B /* SocketController.h */,
+				66636BAD2099CC7100699A4B /* SocketController.m */,
+				A13DA4B72099FF6300A8BFB1 /* FaceBookController.h */,
+				A13DA4B82099FF6300A8BFB1 /* FaceBookController.m */,
+				A13DA4BA2099FFE100A8BFB1 /* TwitterController.h */,
+				A13DA4BB2099FFE100A8BFB1 /* TwitterController.m */,
+				A13DA4BD209A019600A8BFB1 /* InstagramController.h */,
+				A13DA4BE209A019600A8BFB1 /* InstagramController.m */,
 			);
 			path = Examples;
+			sourceTree = "<group>";
+		};
+		A13DA4AB2099F65B00A8BFB1 /* DBCamera */ = {
+			isa = PBXGroup;
+			children = (
+				A13DA4B42099F96500A8BFB1 /* CameraNavigationController.h */,
+				A13DA4B52099F96500A8BFB1 /* CameraNavigationController.m */,
+				A13DA4AD2099F68300A8BFB1 /* CustomCamera.h */,
+				A13DA4AC2099F68300A8BFB1 /* CustomCamera.m */,
+				A13DA4AE2099F68300A8BFB1 /* DBCameraConfiguration.h */,
+				A13DA4B12099F68400A8BFB1 /* DBCameraConfiguration.m */,
+				A13DA4AF2099F68400A8BFB1 /* DBCameraControllerProtocol.h */,
+				A13DA4B02099F68400A8BFB1 /* DBPhotoProcessingControllerProtocol.h */,
+			);
+			path = DBCamera;
 			sourceTree = "<group>";
 		};
 		A1FB7E66208649A800024C33 = {
@@ -305,6 +351,7 @@
 		A1FB7EA820864A0800024C33 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				A13DA4AB2099F65B00A8BFB1 /* DBCamera */,
 				A1CA161A208B0F57006B3AAF /* Utils.h */,
 				A1CA161B208B0F57006B3AAF /* Utils.m */,
 				A1697EF6208A5019009119F1 /* UtilsFont.h */,
@@ -691,6 +738,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PNA-ObjectC/Pods-PNA-ObjectC-resources.sh",
+				"${PODS_ROOT}/DBCamera/DBCamera/Resources/DBCameraImages.xcassets",
+				"${PODS_ROOT}/DBCamera/DBCamera/Localizations/DBCamera.bundle",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/1977.acv",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/amaro.acv",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/Hudson.acv",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/mayfair.acv",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/Nashville.acv",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/Valencia.acv",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/Vignette.acv",
 				"${PODS_ROOT}/EGOTableViewPullRefreshAndLoadMore/EGOTableViewPullRefreshAndLoadMore/Resources/blackArrow.png",
 				"${PODS_ROOT}/EGOTableViewPullRefreshAndLoadMore/EGOTableViewPullRefreshAndLoadMore/Resources/blackArrow@2x.png",
 				"${PODS_ROOT}/EGOTableViewPullRefreshAndLoadMore/EGOTableViewPullRefreshAndLoadMore/Resources/blackArrowLoadMore.png",
@@ -708,6 +764,11 @@
 				"${PODS_ROOT}/EGOTableViewPullRefreshAndLoadMore/EGOTableViewPullRefreshAndLoadMore/Resources/whiteArrowLoadMore.png",
 				"${PODS_ROOT}/EGOTableViewPullRefreshAndLoadMore/EGOTableViewPullRefreshAndLoadMore/Resources/whiteArrowLoadMore@2x.png",
 				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
 				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
@@ -715,6 +776,15 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DBCameraImages.xcassets",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DBCamera.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/1977.acv",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/amaro.acv",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Hudson.acv",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mayfair.acv",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Nashville.acv",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Valencia.acv",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Vignette.acv",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/blackArrow.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/blackArrow@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/blackArrowLoadMore.png",
@@ -732,6 +802,11 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/whiteArrowLoadMore.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/whiteArrowLoadMore@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMOAuth2ViewTouch.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
@@ -765,12 +840,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A14781852097301000011801 /* MenuController.m in Sources */,
+				A13DA4B32099F68400A8BFB1 /* DBCameraConfiguration.m in Sources */,
 				A1697EFD208A52CF009119F1 /* CustomButton.m in Sources */,
 				A1CA160D208B0A50006B3AAF /* MainController.m in Sources */,
+				A13DA4B62099F96500A8BFB1 /* CameraNavigationController.m in Sources */,
 				A1697EF1208A4CC6009119F1 /* LanguageService.m in Sources */,
 				A1697EE7208A49F0009119F1 /* UtilsPlatform.m in Sources */,
 				A1697EE4208A4859009119F1 /* UtilsCache.m in Sources */,
 				A1697EFA208A50D7009119F1 /* CustomImageView.m in Sources */,
+				A13DA4B92099FF6300A8BFB1 /* FaceBookController.m in Sources */,
 				A1CA15FD208B0219006B3AAF /* CustomWKWebView.m in Sources */,
 				A1697EEA208A4B34009119F1 /* CustomView.m in Sources */,
 				A1FB7E7D208649A800024C33 /* PNA_ObjectC.xcdatamodeld in Sources */,
@@ -779,6 +857,7 @@
 				66636BAA2099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.m in Sources */,
 				A1CA1616208B0D3D006B3AAF /* ProcessKeyboardController.m in Sources */,
 				A1CA161C208B0F58006B3AAF /* Utils.m in Sources */,
+				A13DA4B22099F68400A8BFB1 /* CustomCamera.m in Sources */,
 				A1FF34B4208A394A00EC98DD /* ConnectionService.m in Sources */,
 				A1FB7E77208649A800024C33 /* ViewController.m in Sources */,
 				A1697EF4208A4F72009119F1 /* CustomTextField.m in Sources */,
@@ -786,12 +865,15 @@
 				A1697EDC208A3E2A009119F1 /* DownloadService.m in Sources */,
 				A1697EEE208A4BFE009119F1 /* CustomLabel.m in Sources */,
 				A1FB7E85208649A800024C33 /* main.m in Sources */,
+				A13DA4BF209A019600A8BFB1 /* InstagramController.m in Sources */,
 				A1697EF7208A5019009119F1 /* UtilsFont.m in Sources */,
 				A1FB7EC120864BA700024C33 /* PDKeychainBindings.m in Sources */,
 				6629B32220997535004D5D88 /* ExampleController.m in Sources */,
 				A1FB7E74208649A800024C33 /* AppDelegate.m in Sources */,
 				A1FF34B1208A38B400EC98DD /* SQLiteService.m in Sources */,
 				66636BA72099AE4600699A4B /* CameraController.m in Sources */,
+				A13DA4BC2099FFE100A8BFB1 /* TwitterController.m in Sources */,
+				66636BAE2099CC7100699A4B /* SocketController.m in Sources */,
 				A1FB7EC220864BA700024C33 /* PDKeychainBindingsController.m in Sources */,
 				66636BA42099AE3500699A4B /* YoutubeController.m in Sources */,
 				A1FB7EC020864BA700024C33 /* ActivityViewController.m in Sources */,

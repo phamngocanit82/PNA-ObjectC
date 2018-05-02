@@ -37,6 +37,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="E7c-zT-4an" kind="push" id="ORx-WI-wSO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raK-36-TGs" customClass="CustomButton">
                                 <rect key="frame" x="137" y="57" width="100" height="30"/>
@@ -62,10 +65,16 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="tp0-Yw-D89" kind="push" id="znw-ho-KcW"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-uV-FgH" customClass="CustomButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-uV-FgH" customClass="CustomButton">
                                 <rect key="frame" x="29" y="107" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="o1C-zj-8jB"/>
+                                    <constraint firstAttribute="height" constant="30" id="yL4-Q0-Sdj"/>
+                                </constraints>
                                 <state key="normal" title="Youtube"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
@@ -74,34 +83,48 @@
                                     <segue destination="Jrp-vm-fDO" kind="push" id="dcG-zl-sp4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kf-IG-1KB" customClass="CustomButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kf-IG-1KB" customClass="CustomButton">
                                 <rect key="frame" x="137" y="107" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3OE-l6-9f8"/>
+                                    <constraint firstAttribute="width" constant="100" id="jup-NH-jLd"/>
+                                </constraints>
                                 <state key="normal" title="Facebook"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Wfc-TG-W3y" kind="push" id="4Fw-LB-OXF"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhr-dL-c4d" customClass="CustomButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhr-dL-c4d" customClass="CustomButton">
                                 <rect key="frame" x="245" y="106" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Facebook"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aiW-fX-Ey7"/>
+                                    <constraint firstAttribute="width" constant="100" id="gTk-Cu-ibv"/>
+                                </constraints>
+                                <state key="normal" title="Twitter"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="qlx-A3-PTo" kind="push" id="fLK-Vn-LIG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsw-qG-y0I" customClass="CustomButton">
                                 <rect key="frame" x="29" y="156" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Facebook"/>
+                                <state key="normal" title="Instagram"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="0ae-mh-lk1" kind="push" id="x5Z-v2-ruz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yy-qz-Kpp" customClass="CustomButton">
                                 <rect key="frame" x="137" y="155" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Twitter"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -109,7 +132,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikV-Sb-WYp" customClass="CustomButton">
                                 <rect key="frame" x="245" y="156" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Twitter"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -118,11 +140,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VI2-vw-3Zo" firstAttribute="top" secondItem="tfP-UJ-uX6" secondAttribute="topMargin" constant="37" id="0R5-zh-epH"/>
+                            <constraint firstItem="7kf-IG-1KB" firstAttribute="centerX" secondItem="tfP-UJ-uX6" secondAttribute="centerX" id="0sy-eV-ReW"/>
                             <constraint firstItem="raK-36-TGs" firstAttribute="leading" secondItem="VI2-vw-3Zo" secondAttribute="trailing" constant="8" id="3IC-sq-y6I"/>
+                            <constraint firstItem="L5h-uV-FgH" firstAttribute="top" secondItem="VI2-vw-3Zo" secondAttribute="bottom" constant="20" id="5yd-gr-zTg"/>
                             <constraint firstItem="raK-36-TGs" firstAttribute="centerX" secondItem="tfP-UJ-uX6" secondAttribute="centerX" id="GlL-oD-RqL"/>
                             <constraint firstItem="8CP-IK-hPU" firstAttribute="leading" secondItem="TST-TV-zkk" secondAttribute="leading" constant="10" id="Tzm-1B-KrK"/>
                             <constraint firstItem="8CP-IK-hPU" firstAttribute="top" secondItem="tfP-UJ-uX6" secondAttribute="top" constant="10" id="Z2W-Qn-WQj"/>
+                            <constraint firstItem="7kf-IG-1KB" firstAttribute="top" secondItem="raK-36-TGs" secondAttribute="bottom" constant="20" id="ZWO-dF-MHR"/>
+                            <constraint firstItem="Yhr-dL-c4d" firstAttribute="top" secondItem="ZMl-kz-MJB" secondAttribute="bottom" constant="19" id="gay-dq-mW3"/>
+                            <constraint firstItem="Yhr-dL-c4d" firstAttribute="leading" secondItem="7kf-IG-1KB" secondAttribute="trailing" constant="8" id="hqb-xs-8cc"/>
                             <constraint firstItem="ZMl-kz-MJB" firstAttribute="leading" secondItem="raK-36-TGs" secondAttribute="trailing" constant="8" id="jfo-Ac-rfw"/>
+                            <constraint firstItem="7kf-IG-1KB" firstAttribute="leading" secondItem="L5h-uV-FgH" secondAttribute="trailing" constant="8" id="nd7-uo-3u5"/>
                             <constraint firstItem="raK-36-TGs" firstAttribute="top" secondItem="TST-TV-zkk" secondAttribute="top" constant="37" id="sI2-2b-IJr"/>
                             <constraint firstItem="ZMl-kz-MJB" firstAttribute="top" secondItem="TST-TV-zkk" secondAttribute="top" constant="37" id="toS-kt-xVt"/>
                         </constraints>
@@ -134,9 +162,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djB-co-R1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-100" y="199.25037481259372"/>
+            <point key="canvasLocation" x="-410" y="845"/>
         </scene>
-        <!--Youtube Controller-->
+        <!--Instagram-->
+        <scene sceneID="eqh-C2-zaE">
+            <objects>
+                <viewController id="0ae-mh-lk1" customClass="InstagramController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9hx-iD-tgL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4or-hY-O69"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Instagram" id="W7o-Nb-6Nz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXc-or-cu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="1523"/>
+        </scene>
+        <!--Camera-->
+        <scene sceneID="xvb-lh-vKt">
+            <objects>
+                <viewController id="tp0-Yw-D89" customClass="CameraController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bFS-bt-pXt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ba5-qz-PpI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera" id="lse-1R-VcA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0vP-xY-zk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="167"/>
+        </scene>
+        <!--Youtube-->
         <scene sceneID="ceP-UO-WF7">
             <objects>
                 <viewController id="Jrp-vm-fDO" customClass="YoutubeController" sceneMemberID="viewController">
@@ -146,14 +206,62 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Yhg-MN-1es"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EQC-d9-Vuc"/>
+                    <navigationItem key="navigationItem" title="Youtube" id="EQC-d9-Vuc"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C39-Wu-eMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="586" y="199"/>
+            <point key="canvasLocation" x="372" y="846"/>
         </scene>
-        <!--Code Controller-->
+        <!--Facebook-->
+        <scene sceneID="oMV-xE-SKa">
+            <objects>
+                <viewController id="Wfc-TG-W3y" customClass="FaceBookController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OMR-YN-Gu2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3UZ-Nb-rDo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Facebook" id="Lkv-fj-F7i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exR-xr-TCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="845"/>
+        </scene>
+        <!--Twitter-->
+        <scene sceneID="gxB-Iw-6oq">
+            <objects>
+                <viewController id="qlx-A3-PTo" customClass="TwitterController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hGf-dL-bJf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sre-He-cSE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Twitter" id="4ue-xt-ieY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wA0-yD-yZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="845"/>
+        </scene>
+        <!--Socket-->
+        <scene sceneID="vfu-t1-7qO">
+            <objects>
+                <viewController id="E7c-zT-4an" customClass="SocketController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxn-Jo-4es">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="uEP-kW-1FM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Socket" id="OfH-6M-5X8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sTw-fs-dvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="167"/>
+        </scene>
+        <!--QRCode-->
         <scene sceneID="4bX-VX-hTH">
             <objects>
                 <viewController id="Vhv-xn-58a" customClass="QRCodeController" sceneMemberID="viewController">
@@ -214,7 +322,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ove-RC-aL1"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2OA-RU-2Ke"/>
+                    <navigationItem key="navigationItem" title="QRCode" id="2OA-RU-2Ke"/>
                     <connections>
                         <outlet property="qrcodeImageView" destination="eT6-vS-fZW" id="bTZ-Bh-xja"/>
                         <outlet property="qrcodeView" destination="TGc-cA-PLD" id="cGw-ZQ-1Hu"/>
@@ -224,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYB-AL-xSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1252" y="197.45127436281859"/>
+            <point key="canvasLocation" x="1038" y="167"/>
         </scene>
     </scenes>
     <resources>
