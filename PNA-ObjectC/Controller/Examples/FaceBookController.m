@@ -23,7 +23,21 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (IBAction)actionLogin:(id)sender{
+    [UtilsFaceBook.sharedInstance actionLogin:self withComplete:^(NSMutableDictionary *response) {
+        if([response objectForKey:@"name"]){
+            self.nameLabel.text = [response objectForKey:@"name"];
+        }
+        if([response objectForKey:@"email"]){
+            self.emailLabel.text = [response objectForKey:@"email"];
+        }
+        if([response objectForKey:@"picture"]){
+            [self.imgView imageWithPath: [[[response objectForKey:@"picture"] objectForKey:@"data"] objectForKey:@"url"]];
+        }
+    } withError:^{
+        
+    }];
+}
 /*
 #pragma mark - Navigation
 

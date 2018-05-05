@@ -23,7 +23,7 @@ target 'PNA-ObjectC' do
     pod 'XCDYouTubeKit'
     pod 'DGActivityIndicatorView'
     pod 'EGOTableViewPullRefreshAndLoadMore'
-    pod 'SocketIO'
+    pod 'VPSocketIO'
     pod 'DBCamera'
     pod 'SWRevealViewController'
   target 'PNA-ObjectCTests' do

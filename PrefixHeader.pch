@@ -24,6 +24,7 @@
 #import "UtilsCache.h"
 #import "UtilsFont.h"
 #import "UtilsController.h"
+#import "UtilsFaceBook.h"
 #import "SQLiteService.h"
 #import "ConnectionService.h"
 #import "DownloadService.h"

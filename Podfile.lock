@@ -15,7 +15,6 @@ PODS:
   - AFNetworking/Serialization (3.2.0)
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
-  - BlocksKit/DynamicDelegate (2.2.5)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -26,8 +25,6 @@ PODS:
     - GPUImage (~> 0.1)
   - DGActivityIndicatorView (2.1.1)
   - EGOTableViewPullRefreshAndLoadMore (1.0.4)
-  - Emitter (0.0.9):
-    - BlocksKit/DynamicDelegate
   - FBSDKCoreKit (4.32.0):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.32.0):
@@ -103,8 +100,6 @@ PODS:
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
-  - SocketIO (0.0.1):
-    - Emitter
   - SQLCipher (3.4.2):
     - SQLCipher/standard (= 3.4.2)
   - SQLCipher/common (3.4.2)
@@ -113,6 +108,7 @@ PODS:
   - SSZipArchive (2.1.2)
   - SWRevealViewController (2.3.0)
   - TouchJSON (1.1)
+  - VPSocketIO (1.0.5)
   - XCDYouTubeKit (2.5.6)
 
 DEPENDENCIES:
@@ -131,11 +127,11 @@ DEPENDENCIES:
   - InstagramKit
   - NSHash
   - SDWebImage
-  - SocketIO
   - SQLCipher
   - SSZipArchive
   - SWRevealViewController
   - TouchJSON
+  - VPSocketIO
   - XCDYouTubeKit
 
 EXTERNAL SOURCES:
@@ -150,12 +146,10 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AESCrypt: 1d89bf8b0789cf274ab2205ea461adbe9321d5f8
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
-  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   DBCamera: 7a4343a541e1264610f9f33176552b93170a843e
   DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
   EGOTableViewPullRefreshAndLoadMore: 118a0824590db042d42e08fcc442b93cebf15e73
-  Emitter: cf50bf44fc8817535018fbd6c4fd576b87803e78
   FBSDKCoreKit: 55d7f2ac45d9c4b9b6119f4e43900fe84b9b7b1b
   FBSDKLoginKit: 32ac05c2a59952c363c2e85aafa8f73ba93bcbad
   Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
@@ -178,13 +172,13 @@ SPEC CHECKSUMS:
   NSHash: 036c03781d372c288d332b512b203e7bb832e46e
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
-  SocketIO: 52f4b693419f30f831ac567dc306575384128920
   SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
   SSZipArchive: d4009d2ce5520a421f231fd97028cc0e2667eed8
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
   TouchJSON: 39be3595ebe489095311d97ce0c824417324cb74
+  VPSocketIO: 28b685efb13ad866c0d27077a57d335bae5649ce
   XCDYouTubeKit: dccfe0c17dd5c5187969ec27e93069573badb08f
 
-PODFILE CHECKSUM: d50885cb9ab591da77598dedba1cf641bfecd329
+PODFILE CHECKSUM: 376fc265a3a52de25a303277fac0faad9edc94cf
 
 COCOAPODS: 1.4.0

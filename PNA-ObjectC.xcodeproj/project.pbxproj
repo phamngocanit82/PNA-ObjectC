@@ -59,6 +59,7 @@
 		A1FB7EC020864BA700024C33 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7EBB20864BA700024C33 /* ActivityViewController.m */; };
 		A1FB7EC120864BA700024C33 /* PDKeychainBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7EBD20864BA700024C33 /* PDKeychainBindings.m */; };
 		A1FB7EC220864BA700024C33 /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7EBE20864BA700024C33 /* PDKeychainBindingsController.m */; };
+		A1FB83E8209D879A0080FEFB /* UtilsFaceBook.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB83E7209D879A0080FEFB /* UtilsFaceBook.m */; };
 		A1FF34B1208A38B400EC98DD /* SQLiteService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FF34AF208A38B300EC98DD /* SQLiteService.m */; };
 		A1FF34B4208A394A00EC98DD /* ConnectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FF34B3208A394A00EC98DD /* ConnectionService.m */; };
 		E16B220D53C06DC9BB078026 /* libPods-PNA-ObjectCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA537C2B75726B28EDF12D1E /* libPods-PNA-ObjectCTests.a */; };
@@ -184,6 +185,8 @@
 		A1FB7EBD20864BA700024C33 /* PDKeychainBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindings.m; sourceTree = "<group>"; };
 		A1FB7EBE20864BA700024C33 /* PDKeychainBindingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindingsController.m; sourceTree = "<group>"; };
 		A1FB7EBF20864BA700024C33 /* PDKeychainBindingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeychainBindingsController.h; sourceTree = "<group>"; };
+		A1FB83E6209D879A0080FEFB /* UtilsFaceBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsFaceBook.h; sourceTree = "<group>"; };
+		A1FB83E7209D879A0080FEFB /* UtilsFaceBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilsFaceBook.m; sourceTree = "<group>"; };
 		A1FF34AE208A383F00EC98DD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A1FF34AF208A38B300EC98DD /* SQLiteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteService.m; sourceTree = "<group>"; };
 		A1FF34B0208A38B400EC98DD /* SQLiteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteService.h; sourceTree = "<group>"; };
@@ -367,6 +370,8 @@
 				A1697EE6208A49F0009119F1 /* UtilsPlatform.m */,
 				A1CA1607208B0916006B3AAF /* UtilsController.h */,
 				A1CA1608208B0916006B3AAF /* UtilsController.m */,
+				A1FB83E6209D879A0080FEFB /* UtilsFaceBook.h */,
+				A1FB83E7209D879A0080FEFB /* UtilsFaceBook.m */,
 				A1FB7EBC20864BA700024C33 /* ActivityViewController.h */,
 				A1FB7EBB20864BA700024C33 /* ActivityViewController.m */,
 				A1FB7EBA20864BA700024C33 /* PDKeychainBindings.h */,
@@ -777,7 +782,6 @@
 				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/SocketIO/SocketIO.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -815,7 +819,6 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMOAuth2ViewTouch.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SocketIO.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -877,6 +880,7 @@
 				A1FB7E74208649A800024C33 /* AppDelegate.m in Sources */,
 				A1FF34B1208A38B400EC98DD /* SQLiteService.m in Sources */,
 				66636BA72099AE4600699A4B /* CameraController.m in Sources */,
+				A1FB83E8209D879A0080FEFB /* UtilsFaceBook.m in Sources */,
 				A13DA4BC2099FFE100A8BFB1 /* TwitterController.m in Sources */,
 				66636BAE2099CC7100699A4B /* SocketController.m in Sources */,
 				A1FB7EC220864BA700024C33 /* PDKeychainBindingsController.m in Sources */,
@@ -1057,12 +1061,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = GJG8A8A56T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = "PNA-ObjectC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "PNA.PNA-ObjectC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nestle.miloau;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1074,12 +1080,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = GJG8A8A56T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = "PNA-ObjectC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "PNA.PNA-ObjectC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nestle.miloau;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

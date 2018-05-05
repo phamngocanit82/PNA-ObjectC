@@ -239,10 +239,62 @@
                     <view key="view" contentMode="scaleToFill" id="OMR-YN-Gu2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsZ-fC-w2S" customClass="CustomButton">
+                                <rect key="frame" x="20" y="40" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="D01-1b-Hvq"/>
+                                    <constraint firstAttribute="width" constant="100" id="YX6-Cn-sGT"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionLogin:" destination="Wfc-TG-W3y" eventType="touchUpInside" id="SvD-8c-1LQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKz-gt-oFv">
+                                <rect key="frame" x="20" y="103" width="339" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVp-00-kEi">
+                                <rect key="frame" x="20" y="149" width="339" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DcC-wS-Kmd" customClass="CustomImageView">
+                                <rect key="frame" x="20" y="200" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fuv-Nz-VzT"/>
+                                    <constraint firstAttribute="width" constant="100" id="irO-Xd-jHT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WKz-gt-oFv" firstAttribute="leading" secondItem="3UZ-Nb-rDo" secondAttribute="leading" constant="20" id="22J-Je-EVk"/>
+                            <constraint firstItem="xVp-00-kEi" firstAttribute="top" secondItem="WKz-gt-oFv" secondAttribute="bottom" constant="25" id="3dd-GU-bwu"/>
+                            <constraint firstItem="3UZ-Nb-rDo" firstAttribute="trailing" secondItem="WKz-gt-oFv" secondAttribute="trailing" constant="16" id="6CA-bn-4O3"/>
+                            <constraint firstItem="DcC-wS-Kmd" firstAttribute="leading" secondItem="3UZ-Nb-rDo" secondAttribute="leading" constant="20" id="D0h-qw-AKZ"/>
+                            <constraint firstItem="WKz-gt-oFv" firstAttribute="top" secondItem="XsZ-fC-w2S" secondAttribute="bottom" constant="33" id="EXh-q0-aZI"/>
+                            <constraint firstItem="XsZ-fC-w2S" firstAttribute="leading" secondItem="3UZ-Nb-rDo" secondAttribute="leading" constant="20" id="KzD-rY-6YK"/>
+                            <constraint firstItem="XsZ-fC-w2S" firstAttribute="top" secondItem="3UZ-Nb-rDo" secondAttribute="top" constant="20" id="RL7-8H-cH2"/>
+                            <constraint firstItem="DcC-wS-Kmd" firstAttribute="top" secondItem="xVp-00-kEi" secondAttribute="bottom" constant="30" id="RQD-LE-Ufd"/>
+                            <constraint firstItem="3UZ-Nb-rDo" firstAttribute="trailing" secondItem="xVp-00-kEi" secondAttribute="trailing" constant="16" id="ZTL-fy-uof"/>
+                            <constraint firstItem="xVp-00-kEi" firstAttribute="leading" secondItem="3UZ-Nb-rDo" secondAttribute="leading" constant="20" id="geL-uz-fpY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3UZ-Nb-rDo"/>
                     </view>
                     <navigationItem key="navigationItem" title="Facebook" id="Lkv-fj-F7i"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="xVp-00-kEi" id="XcG-pJ-tFG"/>
+                        <outlet property="imgView" destination="DcC-wS-Kmd" id="Ewn-gQ-6aP"/>
+                        <outlet property="nameLabel" destination="WKz-gt-oFv" id="A5b-eh-Gfh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exR-xr-TCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -271,14 +323,29 @@
                     <view key="view" contentMode="scaleToFill" id="cxn-Jo-4es">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nrm-9Z-tnu">
+                                <rect key="frame" x="67" y="90" width="163" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.039215686270000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="uEP-kW-1FM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Socket" id="OfH-6M-5X8"/>
+                    <connections>
+                        <outlet property="moveView" destination="Nrm-9Z-tnu" id="9gF-oj-3g3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTw-fs-dvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ZKH-AA-Ntd">
+                    <connections>
+                        <action selector="moveView:" destination="E7c-zT-4an" id="g1n-YJ-hzx"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="372" y="167"/>
+            <point key="canvasLocation" x="372" y="166.8665667166417"/>
         </scene>
         <!--QRCode-->
         <scene sceneID="4bX-VX-hTH">

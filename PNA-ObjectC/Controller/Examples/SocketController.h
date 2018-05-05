@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SocketController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIView *moveView;
 @end

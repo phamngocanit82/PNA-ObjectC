@@ -8,6 +8,8 @@
 
 #ifndef CustomHeader_h
 #define CustomHeader_h
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
 #import "CustomView.h"
 #import "CustomLabel.h"
 #import "CustomButton.h"

@@ -103,7 +103,7 @@
         <scene sceneID="upw-Cy-SlN">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="ExampleController" storyboardName="Examples" referencedIdentifier="ExampleController" id="Q5P-qS-ldm" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="VbA-sl-lEU"/>
+                    <navigationItem key="navigationItem" title="Examples" id="VbA-sl-lEU"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I47-02-2va" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

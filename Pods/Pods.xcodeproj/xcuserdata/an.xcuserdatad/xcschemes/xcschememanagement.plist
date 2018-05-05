@@ -35,7 +35,7 @@
 		<key>DBCamera.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>29</integer>
+			<integer>28</integer>
 		</dict>
 		<key>DGActivityIndicatorView.xcscheme</key>
 		<dict>
@@ -200,6 +200,11 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>26</integer>
+		</dict>
+		<key>VPSocketIO.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>32</integer>
 		</dict>
 		<key>XCDYouTubeKit.xcscheme</key>
 		<dict>
