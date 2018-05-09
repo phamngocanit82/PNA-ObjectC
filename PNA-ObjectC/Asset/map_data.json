@@ -1,0 +1,86 @@
+{
+    "status": 200,
+    "message": "OK",
+    "data": [
+             {
+             "id": 25,
+             "address": "Hẻm 145 Hai Bà Trưng, Hồ Chí Minh",
+             "shop_location": {
+             "longitude": 106.69728723511,
+             "latitude": 10.783024711964
+             }
+             },
+             {
+             "id": 72,
+             "address": "Hẻm 145 Hai Bà Trưng, Ho Chi Minh City",
+             "shop_location": {
+             "longitude": 106.69731237004,
+             "latitude": 10.783019657257
+             }
+             },
+             {
+             "id": 36,
+             "address": "Hẻm 145 Hai Bà Trưng, Ho Chi Minh City",
+             "shop_location": {
+             "longitude": 106.69733515465,
+             "latitude": 10.783013062162
+             }
+             },
+             {
+             "id": 51,
+             "address": "147, Đường Hai Bà Trưng, Ho Chi Minh City",
+             "shop_location": {
+             "longitude": 106.69736449711,
+             "latitude": 10.783193669996
+             }
+             },
+             {
+             "id": 37,
+             "address": "139, Đường Hai Bà Trưng, Ho Chi Minh City",
+             "shop_location": {
+             "longitude": 106.69764915491,
+             "latitude": 10.783057794916
+             }
+             },
+             {
+             "id": 17,
+             "address": "Hai Bà Trưng District 1, Ho Chi Minh City, Vietnam",
+             "shop_location": {
+             "longitude": 106.6980654,
+             "latitude": 10.7828871
+             }
+             },
+             {
+             "id": 39,
+             "address": "23 Trần Cao Vân, Đa Kao, Quận 1, Hồ Chí Minh, Vietnam",
+             "shop_location": {
+             "longitude": 106.6975386,
+             "latitude": 10.7839626
+             }
+             },
+             {
+             "id": 18,
+             "address": "Nhà Văn Hóa Thanh Niên TpHcm Phạm Ngọc Thạch, Bến Nghé, District 1, Ho Chi Minh City, Vietnam",
+             "shop_location": {
+             "longitude": 106.697534,
+             "latitude": 10.7816313
+             }
+             },
+             {
+             "id": 13,
+             "address": "Mạc Đĩnh Chi, Đa Kao, Quận 1, Hồ Chí Minh, Vietnam",
+             "shop_location": {
+             "longitude": 106.6986744,
+             "latitude": 10.7855096
+             }
+             },
+             {
+             "id": 26,
+             "address": "20 Võ Văn Tần, phường 6, Quận 3, Hồ Chí Minh, Vietnam",
+             "shop_location": {
+             "longitude": 106.693209,
+             "latitude": 10.779994
+             }
+             }
+             ]
+}

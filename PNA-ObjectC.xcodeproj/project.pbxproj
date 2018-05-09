@@ -47,6 +47,10 @@
 		A1CA1613208B0C30006B3AAF /* RefreshTableHeaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CA1612208B0C30006B3AAF /* RefreshTableHeaderController.m */; };
 		A1CA1616208B0D3D006B3AAF /* ProcessKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CA1615208B0D3D006B3AAF /* ProcessKeyboardController.m */; };
 		A1CA161C208B0F58006B3AAF /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CA161B208B0F57006B3AAF /* Utils.m */; };
+		A1F229C820A331B600747AFD /* map_data.json in Resources */ = {isa = PBXBuildFile; fileRef = A1F229C720A331B500747AFD /* map_data.json */; };
+		A1F229CB20A337FA00747AFD /* GoogleMapInforController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F229CA20A337FA00747AFD /* GoogleMapInforController.m */; };
+		A1F229CE20A3444200747AFD /* GooglePlusController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F229CD20A3444200747AFD /* GooglePlusController.m */; };
+		A1F7B14C209DCA5D00BECABF /* UtilsGoogleMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F7B14B209DCA5D00BECABF /* UtilsGoogleMap.m */; };
 		A1FB7E74208649A800024C33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7E73208649A800024C33 /* AppDelegate.m */; };
 		A1FB7E77208649A800024C33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7E76208649A800024C33 /* ViewController.m */; };
 		A1FB7E7A208649A800024C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FB7E78208649A800024C33 /* Main.storyboard */; };
@@ -162,6 +166,13 @@
 		A1CA1615208B0D3D006B3AAF /* ProcessKeyboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessKeyboardController.m; sourceTree = "<group>"; };
 		A1CA161A208B0F57006B3AAF /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		A1CA161B208B0F57006B3AAF /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		A1F229C720A331B500747AFD /* map_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = map_data.json; sourceTree = "<group>"; };
+		A1F229C920A337FA00747AFD /* GoogleMapInforController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMapInforController.h; sourceTree = "<group>"; };
+		A1F229CA20A337FA00747AFD /* GoogleMapInforController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleMapInforController.m; sourceTree = "<group>"; };
+		A1F229CC20A3444200747AFD /* GooglePlusController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GooglePlusController.h; sourceTree = "<group>"; };
+		A1F229CD20A3444200747AFD /* GooglePlusController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GooglePlusController.m; sourceTree = "<group>"; };
+		A1F7B14A209DCA5D00BECABF /* UtilsGoogleMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsGoogleMap.h; sourceTree = "<group>"; };
+		A1F7B14B209DCA5D00BECABF /* UtilsGoogleMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilsGoogleMap.m; sourceTree = "<group>"; };
 		A1FB7E6F208649A800024C33 /* PNA-ObjectC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PNA-ObjectC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FB7E72208649A800024C33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1FB7E73208649A800024C33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -264,6 +275,10 @@
 				A13DA4BE209A019600A8BFB1 /* InstagramController.m */,
 				A13DA4C0209A02F300A8BFB1 /* GoogleMapController.h */,
 				A13DA4C1209A02F300A8BFB1 /* GoogleMapController.m */,
+				A1F229C920A337FA00747AFD /* GoogleMapInforController.h */,
+				A1F229CA20A337FA00747AFD /* GoogleMapInforController.m */,
+				A1F229CC20A3444200747AFD /* GooglePlusController.h */,
+				A1F229CD20A3444200747AFD /* GooglePlusController.m */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -349,6 +364,7 @@
 		A1FB7EA720864A0000024C33 /* Asset */ = {
 			isa = PBXGroup;
 			children = (
+				A1F229C720A331B500747AFD /* map_data.json */,
 				A1CA1600208B02F3006B3AAF /* webView.css */,
 				A1697ED6208A3B95009119F1 /* tables.json */,
 				A1697ED8208A3D51009119F1 /* PNA.db */,
@@ -380,6 +396,8 @@
 				A1FB7EBE20864BA700024C33 /* PDKeychainBindingsController.m */,
 				66636BA82099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.h */,
 				66636BA92099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.m */,
+				A1F7B14A209DCA5D00BECABF /* UtilsGoogleMap.h */,
+				A1F7B14B209DCA5D00BECABF /* UtilsGoogleMap.m */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -604,6 +622,7 @@
 				66636B9D2099AABF00699A4B /* Examples.storyboard in Resources */,
 				A1FB7E82208649A800024C33 /* LaunchScreen.storyboard in Resources */,
 				A1FB7E7F208649A800024C33 /* Assets.xcassets in Resources */,
+				A1F229C820A331B600747AFD /* map_data.json in Resources */,
 				A1697ED7208A3B95009119F1 /* tables.json in Resources */,
 				A1FB7E7A208649A800024C33 /* Main.storyboard in Resources */,
 				A1CA1601208B02F3006B3AAF /* webView.css in Resources */,
@@ -856,6 +875,7 @@
 				A1697EE7208A49F0009119F1 /* UtilsPlatform.m in Sources */,
 				A1697EE4208A4859009119F1 /* UtilsCache.m in Sources */,
 				A1697EFA208A50D7009119F1 /* CustomImageView.m in Sources */,
+				A1F229CE20A3444200747AFD /* GooglePlusController.m in Sources */,
 				A13DA4B92099FF6300A8BFB1 /* FaceBookController.m in Sources */,
 				A1CA15FD208B0219006B3AAF /* CustomWKWebView.m in Sources */,
 				A1697EEA208A4B34009119F1 /* CustomView.m in Sources */,
@@ -865,11 +885,13 @@
 				66636BAA2099B46400699A4B /* MPMoviePlayerController+BackgroundPlayback.m in Sources */,
 				A1CA1616208B0D3D006B3AAF /* ProcessKeyboardController.m in Sources */,
 				A1CA161C208B0F58006B3AAF /* Utils.m in Sources */,
+				A1F229CB20A337FA00747AFD /* GoogleMapInforController.m in Sources */,
 				A13DA4B22099F68400A8BFB1 /* CustomCamera.m in Sources */,
 				A1FF34B4208A394A00EC98DD /* ConnectionService.m in Sources */,
 				A1FB7E77208649A800024C33 /* ViewController.m in Sources */,
 				A1697EF4208A4F72009119F1 /* CustomTextField.m in Sources */,
 				A1CA1609208B0916006B3AAF /* UtilsController.m in Sources */,
+				A1F7B14C209DCA5D00BECABF /* UtilsGoogleMap.m in Sources */,
 				A1697EDC208A3E2A009119F1 /* DownloadService.m in Sources */,
 				A1697EEE208A4BFE009119F1 /* CustomLabel.m in Sources */,
 				A1FB7E85208649A800024C33 /* main.m in Sources */,

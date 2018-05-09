@@ -29,6 +29,7 @@
 #import "ConnectionService.h"
 #import "DownloadService.h"
 #import "LanguageService.h"
+#import "UtilsGoogleMap.h"
 
 
 // Include any system framework and library headers here that should be included in all compilation units.

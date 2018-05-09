@@ -122,7 +122,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="0ae-mh-lk1" kind="push" id="x5Z-v2-ruz"/>
+                                    <segue destination="0ae-mh-lk1" kind="push" id="I7z-z3-F1K"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yy-qz-Kpp" customClass="CustomButton">
@@ -131,12 +131,12 @@
                                     <constraint firstAttribute="height" constant="30" id="cd6-yh-4lc"/>
                                     <constraint firstAttribute="width" constant="100" id="dwJ-7S-Gcg"/>
                                 </constraints>
-                                <state key="normal" title="Google map"/>
+                                <state key="normal" title="Google Plus"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="fSq-ol-1Nc" kind="push" id="RQ7-gj-h1l"/>
+                                    <segue destination="Zj9-bl-Qjg" kind="push" id="a1E-4Y-aYx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikV-Sb-WYp" customClass="CustomButton">
@@ -145,9 +145,13 @@
                                     <constraint firstAttribute="width" constant="100" id="hdQ-iu-TQs"/>
                                     <constraint firstAttribute="height" constant="30" id="yfI-I2-ej7"/>
                                 </constraints>
+                                <state key="normal" title="Google map"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="fSq-ol-1Nc" kind="push" id="AaD-KR-mlX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -181,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djB-co-R1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-410" y="845"/>
+            <point key="canvasLocation" x="-401" y="600"/>
         </scene>
         <!--Instagram-->
         <scene sceneID="eqh-C2-zaE">
@@ -190,7 +194,54 @@
                     <view key="view" contentMode="scaleToFill" id="9hx-iD-tgL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwy-eC-LXN" customClass="CustomButton">
+                                <rect key="frame" x="18" y="52" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IWx-bs-Ao4"/>
+                                    <constraint firstAttribute="height" constant="30" id="g3G-72-V27"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionLogin:" destination="Wfc-TG-W3y" eventType="touchUpInside" id="V7Y-DU-1CM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDs-4V-dmD">
+                                <rect key="frame" x="18" y="115" width="339" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jg-42-sSo">
+                                <rect key="frame" x="18" y="161" width="339" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kcy-uU-z4J" customClass="CustomImageView">
+                                <rect key="frame" x="18" y="212" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="UAs-yq-IyW"/>
+                                    <constraint firstAttribute="width" constant="100" id="qFT-QK-80R"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uDs-4V-dmD" firstAttribute="top" secondItem="jwy-eC-LXN" secondAttribute="bottom" constant="33" id="9Li-WU-a1Q"/>
+                            <constraint firstItem="5jg-42-sSo" firstAttribute="leading" secondItem="4or-hY-O69" secondAttribute="leading" constant="18" id="9T1-Cf-Gec"/>
+                            <constraint firstItem="jwy-eC-LXN" firstAttribute="top" secondItem="4or-hY-O69" secondAttribute="top" constant="32" id="Eq6-4u-ccy"/>
+                            <constraint firstItem="uDs-4V-dmD" firstAttribute="leading" secondItem="4or-hY-O69" secondAttribute="leading" constant="18" id="F5A-St-7bc"/>
+                            <constraint firstItem="Kcy-uU-z4J" firstAttribute="leading" secondItem="4or-hY-O69" secondAttribute="leading" constant="18" id="Gmq-qI-tPa"/>
+                            <constraint firstItem="4or-hY-O69" firstAttribute="trailing" secondItem="5jg-42-sSo" secondAttribute="trailing" constant="18" id="KgZ-lp-NVK"/>
+                            <constraint firstItem="4or-hY-O69" firstAttribute="trailing" secondItem="uDs-4V-dmD" secondAttribute="trailing" constant="18" id="MWF-DV-jbA"/>
+                            <constraint firstItem="5jg-42-sSo" firstAttribute="top" secondItem="uDs-4V-dmD" secondAttribute="bottom" constant="25" id="Pbs-n6-q1g"/>
+                            <constraint firstItem="Kcy-uU-z4J" firstAttribute="top" secondItem="5jg-42-sSo" secondAttribute="bottom" constant="30" id="lcU-WT-x3n"/>
+                            <constraint firstItem="jwy-eC-LXN" firstAttribute="leading" secondItem="4or-hY-O69" secondAttribute="leading" constant="18" id="tPG-hZ-k1y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4or-hY-O69"/>
                     </view>
                     <navigationItem key="navigationItem" title="Instagram" id="W7o-Nb-6Nz"/>
@@ -307,7 +358,54 @@
                     <view key="view" contentMode="scaleToFill" id="hGf-dL-bJf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVO-cq-yhB" customClass="CustomButton">
+                                <rect key="frame" x="20" y="48" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KGT-W8-rMI"/>
+                                    <constraint firstAttribute="width" constant="100" id="brm-Im-GnI"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionLogin:" destination="Wfc-TG-W3y" eventType="touchUpInside" id="omi-P3-wCH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XO-ap-fA5">
+                                <rect key="frame" x="20" y="111" width="339" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VV4-Qj-vxE">
+                                <rect key="frame" x="20" y="157" width="339" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jHF-cH-PCz" customClass="CustomImageView">
+                                <rect key="frame" x="20" y="208" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hPU-24-ONe"/>
+                                    <constraint firstAttribute="width" constant="100" id="mMF-au-uhF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VV4-Qj-vxE" firstAttribute="leading" secondItem="sre-He-cSE" secondAttribute="leading" constant="20" id="1Fs-Mv-6k4"/>
+                            <constraint firstItem="sre-He-cSE" firstAttribute="trailing" secondItem="3XO-ap-fA5" secondAttribute="trailing" constant="16" id="6aH-s4-8G0"/>
+                            <constraint firstItem="VV4-Qj-vxE" firstAttribute="top" secondItem="3XO-ap-fA5" secondAttribute="bottom" constant="25" id="AMj-4s-Dep"/>
+                            <constraint firstItem="3XO-ap-fA5" firstAttribute="top" secondItem="YVO-cq-yhB" secondAttribute="bottom" constant="33" id="Fsc-5N-mzj"/>
+                            <constraint firstItem="jHF-cH-PCz" firstAttribute="top" secondItem="VV4-Qj-vxE" secondAttribute="bottom" constant="30" id="NEr-i0-5V9"/>
+                            <constraint firstItem="3XO-ap-fA5" firstAttribute="leading" secondItem="sre-He-cSE" secondAttribute="leading" constant="20" id="UXc-9a-N0a"/>
+                            <constraint firstItem="YVO-cq-yhB" firstAttribute="top" secondItem="sre-He-cSE" secondAttribute="top" constant="28" id="V9D-8R-9fo"/>
+                            <constraint firstItem="jHF-cH-PCz" firstAttribute="leading" secondItem="sre-He-cSE" secondAttribute="leading" constant="20" id="XsA-NX-zgb"/>
+                            <constraint firstItem="YVO-cq-yhB" firstAttribute="leading" secondItem="sre-He-cSE" secondAttribute="leading" constant="20" id="hWJ-ye-n4f"/>
+                            <constraint firstItem="sre-He-cSE" firstAttribute="trailing" secondItem="VV4-Qj-vxE" secondAttribute="trailing" constant="16" id="yWg-6F-HUH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sre-He-cSE"/>
                     </view>
                     <navigationItem key="navigationItem" title="Twitter" id="4ue-xt-ieY"/>
@@ -434,7 +532,100 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ekf-gt-0Nb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="1522"/>
+            <point key="canvasLocation" x="1710" y="1522"/>
+        </scene>
+        <!--GoogleMapInfor-->
+        <scene sceneID="okc-0U-iYX">
+            <objects>
+                <viewController storyboardIdentifier="GoogleMapInforVC" id="wAh-sp-hoh" customClass="GoogleMapInforController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gus-Ec-AoV">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsv-gx-jcI">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zUr-Tx-qCW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GoogleMapInfor" id="ygx-h8-f4M"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="120" height="50"/>
+                    <connections>
+                        <outlet property="inforLabel" destination="Nsv-gx-jcI" id="Est-lc-Lgc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fie-MI-1ih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2136" y="1243"/>
+        </scene>
+        <!--GooglePlus-->
+        <scene sceneID="75s-2r-9z6">
+            <objects>
+                <viewController id="Zj9-bl-Qjg" customClass="GooglePlusController" customModule="PNA_ObjectC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acv-AC-I0f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoY-Lj-C34" customClass="CustomButton">
+                                <rect key="frame" x="20" y="48" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="d7T-zz-jl6"/>
+                                    <constraint firstAttribute="width" constant="100" id="w75-Nv-iko"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionLogin:" destination="Wfc-TG-W3y" eventType="touchUpInside" id="G5S-wp-awq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdR-YB-1yA">
+                                <rect key="frame" x="20" y="111" width="339" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOf-sN-382">
+                                <rect key="frame" x="20" y="157" width="339" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ATe-bM-5sx" customClass="CustomImageView">
+                                <rect key="frame" x="20" y="208" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="NBc-Z6-ruV"/>
+                                    <constraint firstAttribute="width" constant="100" id="wQW-Rd-py0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BOf-sN-382" firstAttribute="top" secondItem="rdR-YB-1yA" secondAttribute="bottom" constant="25" id="1hI-Vn-x7Z"/>
+                            <constraint firstItem="zoY-Lj-C34" firstAttribute="top" secondItem="4Pp-2i-Pcj" secondAttribute="top" constant="28" id="78C-eH-KZ1"/>
+                            <constraint firstItem="zoY-Lj-C34" firstAttribute="leading" secondItem="4Pp-2i-Pcj" secondAttribute="leading" constant="20" id="80E-mg-vuA"/>
+                            <constraint firstItem="ATe-bM-5sx" firstAttribute="top" secondItem="BOf-sN-382" secondAttribute="bottom" constant="30" id="C5U-zi-5E1"/>
+                            <constraint firstItem="rdR-YB-1yA" firstAttribute="top" secondItem="zoY-Lj-C34" secondAttribute="bottom" constant="33" id="G6r-ta-yhB"/>
+                            <constraint firstItem="ATe-bM-5sx" firstAttribute="leading" secondItem="4Pp-2i-Pcj" secondAttribute="leading" constant="20" id="JJO-x9-tfo"/>
+                            <constraint firstItem="BOf-sN-382" firstAttribute="leading" secondItem="4Pp-2i-Pcj" secondAttribute="leading" constant="20" id="Mmu-hV-Nsa"/>
+                            <constraint firstItem="rdR-YB-1yA" firstAttribute="leading" secondItem="4Pp-2i-Pcj" secondAttribute="leading" constant="20" id="RIN-Da-dHM"/>
+                            <constraint firstItem="4Pp-2i-Pcj" firstAttribute="trailing" secondItem="BOf-sN-382" secondAttribute="trailing" constant="16" id="cmZ-bM-N4I"/>
+                            <constraint firstItem="4Pp-2i-Pcj" firstAttribute="trailing" secondItem="rdR-YB-1yA" secondAttribute="trailing" constant="16" id="os1-vA-Smy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Pp-2i-Pcj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GooglePlus" id="1rn-nW-Ce9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsB-eu-JKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="1538"/>
         </scene>
     </scenes>
     <resources>
