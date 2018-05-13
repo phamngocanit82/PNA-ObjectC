@@ -43,6 +43,8 @@
 
 #define PASS_AES_CRYPT @"P@ssw0rd!"
 #define VIDEO_MOV @"video"
+#define TWITTER_CONSUMER_SECRET @"EPxK2z4SCTvXEFsW615HPtGjj9r1sftQd5s3Klv5O44cjpouVM"
+#define TWITTER_CONSUMER_KEY @"8Bfy7EFRFgIKeFTfvOYbPP3gn"
 #define DecimalDigit 2
 #define appDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 #define CHECK_VALID_EMAIL 111

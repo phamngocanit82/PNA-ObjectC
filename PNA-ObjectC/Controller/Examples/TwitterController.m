@@ -7,7 +7,7 @@
 //
 
 #import "TwitterController.h"
-
+#import <TwitterKit/TWTRKit.h>
 @interface TwitterController ()
 
 @end
@@ -33,5 +33,24 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+- (IBAction)actionLogin:(id)sender{
+    [[Twitter sharedInstance] logInWithCompletion:^(TWTRSession *session, NSError *error) {
+        TWTRAPIClient *client = [TWTRAPIClient clientWithCurrentUser];
+        [client requestEmailForCurrentUser:^(NSString *email, NSError *error) {
+            self.nameLabel.text = session.userName;
+            if (email) {
+                self.emailLabel.text = email;
+            } else {
+                self.emailLabel.text = @"This user does not have an email address";
+            }
+            [self getUser:session.userID];
+        }];
+    }];
+}
+-(void)getUser:(NSString*)userId{
+    TWTRAPIClient *client = [[TWTRAPIClient alloc] init];
+    [client loadUserWithID:userId completion:^(TWTRUser *user, NSError *error) {
+         [self.imgView imageWithPath: user.profileImageURL];
+    }];
+}
 @end

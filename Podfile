@@ -26,6 +26,8 @@ target 'PNA-ObjectC' do
     pod 'VPSocketIO'
     pod 'DBCamera'
     pod 'SWRevealViewController'
+    pod 'TwitterCore'
+    pod 'TwitterKit'
   target 'PNA-ObjectCTests' do
     inherit! :search_paths
     # Pods for testing

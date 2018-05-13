@@ -370,7 +370,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="actionLogin:" destination="Wfc-TG-W3y" eventType="touchUpInside" id="omi-P3-wCH"/>
+                                    <action selector="actionLogin:" destination="qlx-A3-PTo" eventType="touchUpInside" id="5oy-Q0-n3L"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XO-ap-fA5">
@@ -409,6 +409,11 @@
                         <viewLayoutGuide key="safeArea" id="sre-He-cSE"/>
                     </view>
                     <navigationItem key="navigationItem" title="Twitter" id="4ue-xt-ieY"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="VV4-Qj-vxE" id="zQE-pL-WOM"/>
+                        <outlet property="imgView" destination="jHF-cH-PCz" id="XYF-EW-0n4"/>
+                        <outlet property="nameLabel" destination="3XO-ap-fA5" id="jV3-2c-JN1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wA0-yD-yZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
