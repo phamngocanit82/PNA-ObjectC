@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		10BCA112A30B6718335DD0C4 /* libPods-PNA-ObjectC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8390E9C0FD214C665B34B9 /* libPods-PNA-ObjectC.a */; };
 		6629B32220997535004D5D88 /* ExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6629B32120997535004D5D88 /* ExampleController.m */; };
+		66450F5820AC32D2008277EB /* BluetoothService.m in Sources */ = {isa = PBXBuildFile; fileRef = 66450F5620AC32D1008277EB /* BluetoothService.m */; };
 		66636B9D2099AABF00699A4B /* Examples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66636B9B2099AABF00699A4B /* Examples.storyboard */; };
 		66636BA12099AE2600699A4B /* QRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66636BA02099AE2600699A4B /* QRCodeController.m */; };
 		66636BA42099AE3500699A4B /* YoutubeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66636BA32099AE3500699A4B /* YoutubeController.m */; };
@@ -93,6 +94,8 @@
 		647DA4D2BF46769F8670C0EC /* libPods-PNA-ObjectCUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PNA-ObjectCUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6629B32020997535004D5D88 /* ExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleController.h; sourceTree = "<group>"; };
 		6629B32120997535004D5D88 /* ExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleController.m; sourceTree = "<group>"; };
+		66450F5620AC32D1008277EB /* BluetoothService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothService.m; sourceTree = "<group>"; };
+		66450F5720AC32D2008277EB /* BluetoothService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothService.h; sourceTree = "<group>"; };
 		66636B9C2099AABF00699A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Examples.storyboard; sourceTree = "<group>"; };
 		66636B9F2099AE2600699A4B /* QRCodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeController.h; sourceTree = "<group>"; };
 		66636BA02099AE2600699A4B /* QRCodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeController.m; sourceTree = "<group>"; };
@@ -414,6 +417,8 @@
 		A1FB7EAA20864A1900024C33 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				66450F5720AC32D2008277EB /* BluetoothService.h */,
+				66450F5620AC32D1008277EB /* BluetoothService.m */,
 				A1697EEF208A4CC6009119F1 /* LanguageService.h */,
 				A1697EF0208A4CC6009119F1 /* LanguageService.m */,
 				A1697EDB208A3E2A009119F1 /* DownloadService.h */,
@@ -877,6 +882,7 @@
 			files = (
 				A14781852097301000011801 /* MenuController.m in Sources */,
 				A13DA4B32099F68400A8BFB1 /* DBCameraConfiguration.m in Sources */,
+				66450F5820AC32D2008277EB /* BluetoothService.m in Sources */,
 				A1697EFD208A52CF009119F1 /* CustomButton.m in Sources */,
 				A1CA160D208B0A50006B3AAF /* MainController.m in Sources */,
 				A13DA4B62099F96500A8BFB1 /* CameraNavigationController.m in Sources */,

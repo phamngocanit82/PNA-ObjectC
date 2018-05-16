@@ -181,9 +181,7 @@
         }
         NSCharacterSet * set = [[NSCharacterSet characterSetWithCharactersInString:@"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLKMNOPQRSTUVWXYZ0123456789"] invertedSet];
         if([strPass rangeOfCharacterFromSet:[NSCharacterSet characterSetWithCharactersInString:@"0123456789"]].location != NSNotFound){
-            if([strPass rangeOfCharacterFromSet:[NSCharacterSet characterSetWithCharactersInString:@"abcdefghijklmnopqrstuvwxyz0123456789"]].location == NSNotFound||[strPass rangeOfCharacterFromSet:[NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLKMNOPQRSTUVWXYZ0123456789"]].location == NSNotFound){
-                resultLevel++;
-            }
+            resultLevel++;
         }
         if ([strPass rangeOfCharacterFromSet:set].location != NSNotFound){
             resultLevel++;
