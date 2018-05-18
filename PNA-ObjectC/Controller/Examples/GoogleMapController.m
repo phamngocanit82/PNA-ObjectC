@@ -57,7 +57,6 @@
         lbl.textAlignment = NSTextAlignmentCenter;
         lbl.text = [[NSNumber numberWithInteger:i+1] stringValue];
         [iconView addSubview:lbl];
-        [UtilsFont changeFont:(UIControl*)lbl increaseFont:YES];
         UIGraphicsBeginImageContextWithOptions(iconView.bounds.size, NO, [[UIScreen mainScreen] scale]);
         [iconView.layer renderInContext:UIGraphicsGetCurrentContext()];
         UIImage *icon = UIGraphicsGetImageFromCurrentImageContext();

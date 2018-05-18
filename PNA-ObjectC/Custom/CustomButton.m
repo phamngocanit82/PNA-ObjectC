@@ -11,8 +11,16 @@
     return self;
 }
 -(void)awakeFromNib{
+    if (UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation)){
+        fontSize = self.titleLabel.font.pointSize*[UtilsPlatform getWidth]/320.0f;
+    }else{
+        fontSize = self.titleLabel.font.pointSize*[UtilsPlatform getHeight]/320.0f;
+    }
     [self reDrawing];
     [super awakeFromNib];
+}
+-(NSInteger)getFontSize{
+    return fontSize;
 }
 -(void)clearDrawing{
     self.layer.borderWidth = 0;

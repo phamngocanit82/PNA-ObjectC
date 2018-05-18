@@ -61,6 +61,19 @@
         [[[view subviews] objectAtIndex:0] removeFromSuperview];
     }
 }
++(void)animationFade:(UIView*)view FadeIn:(BOOL)fade{
+    if(fade){
+        view.alpha = 0;
+        [UIView animateWithDuration:1.5f animations:^{
+            view.alpha = 1;
+        }];
+    }else{
+        view.alpha = 1;
+        [UIView animateWithDuration:1.5f animations:^{
+            view.alpha = 0;
+        }];
+    }
+}
 +(CGRect)resizeLabel:(UILabel *)label{
     label.lineBreakMode = NSLineBreakByWordWrapping;
     label.numberOfLines = 0;
@@ -95,17 +108,6 @@
     }
     return size.width;
 }
-+(UIView*)getViewFromXibFile:(NSString *)xibFile RestorationIdentifier:(NSString*)restorationIdentifier{
-    NSArray *nibViews = [[NSBundle mainBundle] loadNibNamed:xibFile owner:nil options:nil];
-    UIView *view;
-    for (NSInteger i=0; i<[nibViews count]; i++) {
-        view = [nibViews objectAtIndex:i];
-        if ([view.restorationIdentifier isEqualToString:restorationIdentifier]) {
-            return view;
-        }
-    }
-    return nil;
-}
 +(NSString*)encodeStringToBase64:(NSString*)fromString{
     NSData *plainData = [fromString dataUsingEncoding:NSUTF8StringEncoding];
     NSString *base64String;
@@ -134,8 +136,8 @@
     }
     return TRUE;
 }
-+(BOOL)checkNumeric:(NSString *)strText{
-    for (int i = 0; i < [strText length]; i++) {
++(BOOL)checkNumeric:(NSString*)strText{
+    for(NSInteger i = 0; i < [strText length]; i++) {
         char c = [strText characterAtIndex:i];
         if (c == ','||c == '.') {
             return YES;
@@ -149,13 +151,11 @@
 +(NSString*)strongPassword:(NSString *)strPass MaxLength:(NSInteger)maxLength{
     NSInteger resultLevel = 0;
     if ([strPass length] >= maxLength){
-        int i = 0;
-        while (i < [strPass length]){
+        NSInteger i = 0;
+        while (i<[strPass length]){
             NSString* character = [strPass substringWithRange:NSMakeRange(i, 1)];
-            NSRegularExpression *regex = [[NSRegularExpression alloc]
-                                          initWithPattern:@"[a-zA-Z]" options:0 error:NULL];
-            NSUInteger matches = [regex numberOfMatchesInString:character options:0
-                                                          range:NSMakeRange(0, [character length])];
+            NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"[a-zA-Z]" options:0 error:NULL];
+            NSUInteger matches = [regex numberOfMatchesInString:character options:0 range:NSMakeRange(0, [character length])];
             if (matches > 0){
                 if ([character isEqualToString:[character uppercaseString]]) {
                     resultLevel++;
@@ -167,10 +167,8 @@
         i = 0;
         while (i < [strPass length]){
             NSString* character = [strPass substringWithRange:NSMakeRange(i, 1)];
-            NSRegularExpression *regex = [[NSRegularExpression alloc]
-                                          initWithPattern:@"[a-zA-Z]" options:0 error:NULL];
-            NSUInteger matches = [regex numberOfMatchesInString:character options:0
-                                                          range:NSMakeRange(0, [character length])];
+            NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"[a-zA-Z]" options:0 error:NULL];
+            NSUInteger matches = [regex numberOfMatchesInString:character options:0 range:NSMakeRange(0, [character length])];
             if (matches > 0){
                 if ([character isEqualToString:[character lowercaseString]]) {
                     resultLevel++;
@@ -197,9 +195,15 @@
     formatterCurrency.numberStyle = NSNumberFormatterDecimalStyle;
     [formatterCurrency setMaximumFractionDigits:DecimalDigit];
     if(CFNumberIsFloatType((CFNumberRef)value))
-    return [NSString stringWithFormat:@"%@",[formatterCurrency stringFromNumber:@([value floatValue])]];
+        return [NSString stringWithFormat:@"%@",[formatterCurrency stringFromNumber:@([value floatValue])]];
     else
-    return [NSString stringWithFormat:@"%@",[formatterCurrency stringFromNumber:@([value integerValue])]];
+        return [NSString stringWithFormat:@"%@",[formatterCurrency stringFromNumber:@([value integerValue])]];
+}
++(NSString *)hexToDecimal:(NSString*)str{
+    NSScanner* scanner = [NSScanner scannerWithString:str];
+    unsigned int outVal;
+    [scanner scanHexInt:&outVal];
+    return [NSString stringWithFormat:@"%d", outVal];
 }
 +(void)log:(NSString *)strText{
     NSLog(strText);

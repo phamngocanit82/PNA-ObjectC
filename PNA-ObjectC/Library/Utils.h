@@ -13,11 +13,11 @@
 
 +(void)removeAllSubviews:(UIView *)view;
 
++(void)animationFade:(UIView*)view FadeIn:(BOOL)fade;
+
 +(CGRect)resizeLabel:(UILabel *)label;
 
 +(CGFloat)resizeWidthLabel:(UILabel*)lbl;
-
-+(UIView*)getViewFromXibFile:(NSString *)xibFile RestorationIdentifier:(NSString*)restorationIdentifier;
 
 +(void)setTextFromDate:(UILabel*)label Date:(NSDate*)date;
 
@@ -38,6 +38,8 @@
 +(BOOL)checkNumeric:(NSString *)strText;
 
 +(NSString*)getNumberFormatter:(NSNumber*)value;
+
++(NSString *)hexToDecimal:(NSString*)str;
 
 +(void)log:(NSString *)strText;
 @end

@@ -1,6 +1,8 @@
 #import <UIKit/UIKit.h>
 IB_DESIGNABLE
-@interface CustomButton: UIButton
+@interface CustomButton: UIButton{
+    NSInteger fontSize;
+}
 @property(copy)IBInspectable NSString *keyLang;
 @property(copy)IBInspectable NSString *openScreenGTM;
 @property(copy)IBInspectable NSString *categoryGTM;
@@ -14,6 +16,8 @@ IB_DESIGNABLE
 @property IBInspectable BOOL pushGTM;
 @property IBInspectable BOOL redraw;
 @property IBInspectable BOOL redrawSmall;
+
+-(NSInteger)getFontSize;
 
 -(void)clearDrawing;
 

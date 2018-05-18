@@ -6,7 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,176 +17,192 @@
             <objects>
                 <viewController storyboardIdentifier="ExampleController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iKq-ks-pqv" customClass="ExampleController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tfP-UJ-uX6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CP-IK-hPU" customClass="CustomButton">
-                                <rect key="frame" x="10" y="10" width="44" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91T-cF-8ZR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CP-IK-hPU" customClass="CustomButton">
+                                        <rect key="frame" x="10" y="10" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="CUx-LW-7va"/>
+                                            <constraint firstAttribute="height" constant="44" id="wpb-KB-2ED"/>
+                                        </constraints>
+                                        <state key="normal" image="reveal-icon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VI2-vw-3Zo" customClass="CustomButton">
+                                        <rect key="frame" x="2.5" y="62" width="100" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Socket"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="E7c-zT-4an" kind="push" id="ORx-WI-wSO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raK-36-TGs" customClass="CustomButton">
+                                        <rect key="frame" x="110" y="62" width="100" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="raK-36-TGs" secondAttribute="height" multiplier="107:30" id="wod-Hj-Jg6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="QRCode"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Vhv-xn-58a" kind="push" id="iWE-Nt-j7Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMl-kz-MJB" customClass="CustomButton">
+                                        <rect key="frame" x="218" y="62" width="100" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Camera"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="tp0-Yw-D89" kind="push" id="znw-ho-KcW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-uV-FgH" customClass="CustomButton">
+                                        <rect key="frame" x="2" y="112" width="100" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Youtube"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Jrp-vm-fDO" kind="push" id="dcG-zl-sp4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kf-IG-1KB" customClass="CustomButton">
+                                        <rect key="frame" x="110" y="112" width="100" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Facebook"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Wfc-TG-W3y" kind="push" id="4Fw-LB-OXF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhr-dL-c4d" customClass="CustomButton">
+                                        <rect key="frame" x="218" y="112" width="100" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Twitter"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="qlx-A3-PTo" kind="push" id="fLK-Vn-LIG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsw-qG-y0I" customClass="CustomButton">
+                                        <rect key="frame" x="2" y="160" width="100" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Instagram"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="0ae-mh-lk1" kind="push" id="I7z-z3-F1K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yy-qz-Kpp" customClass="CustomButton">
+                                        <rect key="frame" x="110" y="160" width="100" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Google Plus"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Zj9-bl-Qjg" kind="push" id="a1E-4Y-aYx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikV-Sb-WYp" customClass="CustomButton">
+                                        <rect key="frame" x="218" y="160" width="100" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Google map"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="fSq-ol-1Nc" kind="push" id="AaD-KR-mlX"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHG-M5-Dmc" customClass="CustomLabel">
+                                        <rect key="frame" x="143.5" y="205" width="33" height="16"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="PR8-te-ydd"/>
-                                    <constraint firstAttribute="width" constant="44" id="rmh-5O-bGE"/>
+                                    <constraint firstItem="raK-36-TGs" firstAttribute="height" secondItem="VI2-vw-3Zo" secondAttribute="height" id="2Gc-lL-YPz"/>
+                                    <constraint firstItem="ikV-Sb-WYp" firstAttribute="leading" secondItem="5yy-qz-Kpp" secondAttribute="trailing" constant="8" id="3RN-FY-Nct"/>
+                                    <constraint firstItem="raK-36-TGs" firstAttribute="centerX" secondItem="91T-cF-8ZR" secondAttribute="centerX" id="3aa-fh-Hvh"/>
+                                    <constraint firstItem="8CP-IK-hPU" firstAttribute="top" secondItem="91T-cF-8ZR" secondAttribute="top" constant="10" id="3oJ-QT-ULf"/>
+                                    <constraint firstItem="7kf-IG-1KB" firstAttribute="width" secondItem="L5h-uV-FgH" secondAttribute="width" id="4fG-DN-MKq"/>
+                                    <constraint firstItem="raK-36-TGs" firstAttribute="width" secondItem="VI2-vw-3Zo" secondAttribute="width" id="AWW-7L-v7y"/>
+                                    <constraint firstItem="Yhr-dL-c4d" firstAttribute="width" secondItem="7kf-IG-1KB" secondAttribute="width" id="BiJ-Nd-mRm"/>
+                                    <constraint firstItem="raK-36-TGs" firstAttribute="top" secondItem="91T-cF-8ZR" secondAttribute="top" constant="62" id="EFx-Gm-XAd"/>
+                                    <constraint firstItem="IHG-M5-Dmc" firstAttribute="centerX" secondItem="91T-cF-8ZR" secondAttribute="centerX" id="Gbo-Es-skW"/>
+                                    <constraint firstItem="L5h-uV-FgH" firstAttribute="top" secondItem="VI2-vw-3Zo" secondAttribute="bottom" constant="22" id="LJo-XX-gvt"/>
+                                    <constraint firstItem="7kf-IG-1KB" firstAttribute="height" secondItem="L5h-uV-FgH" secondAttribute="height" id="NgQ-wA-pEN"/>
+                                    <constraint firstItem="7kf-IG-1KB" firstAttribute="centerX" secondItem="91T-cF-8ZR" secondAttribute="centerX" id="QbU-CQ-Spa"/>
+                                    <constraint firstItem="7kf-IG-1KB" firstAttribute="width" secondItem="raK-36-TGs" secondAttribute="width" id="RJs-Ty-7Vp"/>
+                                    <constraint firstItem="ZMl-kz-MJB" firstAttribute="width" secondItem="raK-36-TGs" secondAttribute="width" id="VgM-8y-kTq"/>
+                                    <constraint firstItem="IHG-M5-Dmc" firstAttribute="top" secondItem="5yy-qz-Kpp" secondAttribute="bottom" constant="17" id="Wcc-m0-4BB"/>
+                                    <constraint firstItem="raK-36-TGs" firstAttribute="leading" secondItem="VI2-vw-3Zo" secondAttribute="trailing" constant="7.5" id="XdY-qs-Ny7"/>
+                                    <constraint firstItem="ikV-Sb-WYp" firstAttribute="height" secondItem="5yy-qz-Kpp" secondAttribute="height" id="YjW-7C-3cc"/>
+                                    <constraint firstItem="Yhr-dL-c4d" firstAttribute="height" secondItem="7kf-IG-1KB" secondAttribute="height" id="djs-pA-ynd"/>
+                                    <constraint firstItem="5yy-qz-Kpp" firstAttribute="top" secondItem="7kf-IG-1KB" secondAttribute="bottom" constant="20" id="f7o-A3-5gj"/>
+                                    <constraint firstItem="ZMl-kz-MJB" firstAttribute="top" secondItem="91T-cF-8ZR" secondAttribute="top" constant="62" id="fcg-52-LL2"/>
+                                    <constraint firstItem="5yy-qz-Kpp" firstAttribute="height" secondItem="raK-36-TGs" secondAttribute="height" id="ijl-FI-w0H"/>
+                                    <constraint firstItem="5yy-qz-Kpp" firstAttribute="height" secondItem="fsw-qG-y0I" secondAttribute="height" id="imR-Ua-Zp3"/>
+                                    <constraint firstItem="5yy-qz-Kpp" firstAttribute="leading" secondItem="fsw-qG-y0I" secondAttribute="trailing" constant="8" id="kkT-sS-JTK"/>
+                                    <constraint firstItem="Yhr-dL-c4d" firstAttribute="top" secondItem="ZMl-kz-MJB" secondAttribute="bottom" constant="22" id="lU9-zS-kYV"/>
+                                    <constraint firstItem="ikV-Sb-WYp" firstAttribute="top" secondItem="Yhr-dL-c4d" secondAttribute="bottom" constant="20" id="m4J-wG-HFN"/>
+                                    <constraint firstItem="VI2-vw-3Zo" firstAttribute="top" secondItem="8CP-IK-hPU" secondAttribute="bottom" constant="8" id="mQL-O2-XZJ"/>
+                                    <constraint firstItem="5yy-qz-Kpp" firstAttribute="width" secondItem="raK-36-TGs" secondAttribute="width" id="nFU-Ec-LLg"/>
+                                    <constraint firstItem="5yy-qz-Kpp" firstAttribute="centerX" secondItem="91T-cF-8ZR" secondAttribute="centerX" id="nRr-WP-7Je"/>
+                                    <constraint firstItem="ikV-Sb-WYp" firstAttribute="width" secondItem="5yy-qz-Kpp" secondAttribute="width" id="nl0-Ku-WSw"/>
+                                    <constraint firstItem="fsw-qG-y0I" firstAttribute="top" secondItem="L5h-uV-FgH" secondAttribute="bottom" constant="20" id="ocR-h8-9vE"/>
+                                    <constraint firstItem="7kf-IG-1KB" firstAttribute="height" secondItem="raK-36-TGs" secondAttribute="height" id="pH1-XK-U9i"/>
+                                    <constraint firstItem="7kf-IG-1KB" firstAttribute="leading" secondItem="L5h-uV-FgH" secondAttribute="trailing" constant="8" id="pMR-nc-fr7"/>
+                                    <constraint firstItem="ZMl-kz-MJB" firstAttribute="leading" secondItem="raK-36-TGs" secondAttribute="trailing" constant="8" id="rQk-Jr-ZVp"/>
+                                    <constraint firstItem="ZMl-kz-MJB" firstAttribute="height" secondItem="raK-36-TGs" secondAttribute="height" id="sOZ-M2-tEs"/>
+                                    <constraint firstItem="7kf-IG-1KB" firstAttribute="top" secondItem="raK-36-TGs" secondAttribute="bottom" constant="22" id="uEM-gx-htw"/>
+                                    <constraint firstItem="Yhr-dL-c4d" firstAttribute="leading" secondItem="7kf-IG-1KB" secondAttribute="trailing" constant="8" id="vtx-CY-aVD"/>
+                                    <constraint firstItem="5yy-qz-Kpp" firstAttribute="width" secondItem="fsw-qG-y0I" secondAttribute="width" id="x2H-Gx-htZ"/>
+                                    <constraint firstItem="8CP-IK-hPU" firstAttribute="leading" secondItem="91T-cF-8ZR" secondAttribute="leading" constant="10" id="x9l-Yy-Quo"/>
+                                    <constraint firstItem="raK-36-TGs" firstAttribute="width" secondItem="91T-cF-8ZR" secondAttribute="width" multiplier="1/3.2" id="zM4-1l-cyz"/>
                                 </constraints>
-                                <state key="normal" image="reveal-icon"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VI2-vw-3Zo" customClass="CustomButton">
-                                <rect key="frame" x="29" y="57" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="dDf-7N-Pts"/>
-                                    <constraint firstAttribute="height" constant="30" id="wMF-PP-Yc2"/>
-                                </constraints>
-                                <state key="normal" title="Socket"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="E7c-zT-4an" kind="push" id="ORx-WI-wSO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raK-36-TGs" customClass="CustomButton">
-                                <rect key="frame" x="137" y="57" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="J6z-ae-1Qr"/>
-                                    <constraint firstAttribute="height" constant="30" id="znL-mJ-ZcJ"/>
-                                </constraints>
-                                <state key="normal" title="QRCode"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Vhv-xn-58a" kind="push" id="iWE-Nt-j7Y"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMl-kz-MJB" customClass="CustomButton">
-                                <rect key="frame" x="245" y="57" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="91J-EV-wDO"/>
-                                    <constraint firstAttribute="height" constant="30" id="ycp-st-Gzo"/>
-                                </constraints>
-                                <state key="normal" title="Camera"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="tp0-Yw-D89" kind="push" id="znw-ho-KcW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-uV-FgH" customClass="CustomButton">
-                                <rect key="frame" x="29" y="107" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="o1C-zj-8jB"/>
-                                    <constraint firstAttribute="height" constant="30" id="yL4-Q0-Sdj"/>
-                                </constraints>
-                                <state key="normal" title="Youtube"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Jrp-vm-fDO" kind="push" id="dcG-zl-sp4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kf-IG-1KB" customClass="CustomButton">
-                                <rect key="frame" x="137" y="107" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="3OE-l6-9f8"/>
-                                    <constraint firstAttribute="width" constant="100" id="jup-NH-jLd"/>
-                                </constraints>
-                                <state key="normal" title="Facebook"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Wfc-TG-W3y" kind="push" id="4Fw-LB-OXF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhr-dL-c4d" customClass="CustomButton">
-                                <rect key="frame" x="245" y="106" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="aiW-fX-Ey7"/>
-                                    <constraint firstAttribute="width" constant="100" id="gTk-Cu-ibv"/>
-                                </constraints>
-                                <state key="normal" title="Twitter"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="qlx-A3-PTo" kind="push" id="fLK-Vn-LIG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsw-qG-y0I" customClass="CustomButton">
-                                <rect key="frame" x="29" y="156" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="l1a-h0-ngs"/>
-                                    <constraint firstAttribute="width" constant="100" id="qtE-Rn-Gid"/>
-                                </constraints>
-                                <state key="normal" title="Instagram"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="0ae-mh-lk1" kind="push" id="I7z-z3-F1K"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yy-qz-Kpp" customClass="CustomButton">
-                                <rect key="frame" x="137" y="155" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="cd6-yh-4lc"/>
-                                    <constraint firstAttribute="width" constant="100" id="dwJ-7S-Gcg"/>
-                                </constraints>
-                                <state key="normal" title="Google Plus"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Zj9-bl-Qjg" kind="push" id="a1E-4Y-aYx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikV-Sb-WYp" customClass="CustomButton">
-                                <rect key="frame" x="245" y="156" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="hdQ-iu-TQs"/>
-                                    <constraint firstAttribute="height" constant="30" id="yfI-I2-ej7"/>
-                                </constraints>
-                                <state key="normal" title="Google map"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="redraw" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="fSq-ol-1Nc" kind="push" id="AaD-KR-mlX"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VI2-vw-3Zo" firstAttribute="top" secondItem="tfP-UJ-uX6" secondAttribute="topMargin" constant="37" id="0R5-zh-epH"/>
-                            <constraint firstItem="7kf-IG-1KB" firstAttribute="centerX" secondItem="tfP-UJ-uX6" secondAttribute="centerX" id="0sy-eV-ReW"/>
-                            <constraint firstItem="raK-36-TGs" firstAttribute="leading" secondItem="VI2-vw-3Zo" secondAttribute="trailing" constant="8" id="3IC-sq-y6I"/>
-                            <constraint firstItem="fsw-qG-y0I" firstAttribute="top" secondItem="L5h-uV-FgH" secondAttribute="bottom" constant="19" id="4Yb-1o-ti7"/>
-                            <constraint firstItem="L5h-uV-FgH" firstAttribute="top" secondItem="VI2-vw-3Zo" secondAttribute="bottom" constant="20" id="5yd-gr-zTg"/>
-                            <constraint firstItem="ikV-Sb-WYp" firstAttribute="top" secondItem="Yhr-dL-c4d" secondAttribute="bottom" constant="20" id="BGX-dO-fBE"/>
-                            <constraint firstItem="raK-36-TGs" firstAttribute="centerX" secondItem="tfP-UJ-uX6" secondAttribute="centerX" id="GlL-oD-RqL"/>
-                            <constraint firstItem="8CP-IK-hPU" firstAttribute="leading" secondItem="TST-TV-zkk" secondAttribute="leading" constant="10" id="Tzm-1B-KrK"/>
-                            <constraint firstItem="8CP-IK-hPU" firstAttribute="top" secondItem="tfP-UJ-uX6" secondAttribute="top" constant="10" id="Z2W-Qn-WQj"/>
-                            <constraint firstItem="5yy-qz-Kpp" firstAttribute="top" secondItem="7kf-IG-1KB" secondAttribute="bottom" constant="18" id="ZO2-Td-jGR"/>
-                            <constraint firstItem="7kf-IG-1KB" firstAttribute="top" secondItem="raK-36-TGs" secondAttribute="bottom" constant="20" id="ZWO-dF-MHR"/>
-                            <constraint firstItem="ikV-Sb-WYp" firstAttribute="leading" secondItem="5yy-qz-Kpp" secondAttribute="trailing" constant="8" id="dSV-d7-kXQ"/>
-                            <constraint firstItem="Yhr-dL-c4d" firstAttribute="top" secondItem="ZMl-kz-MJB" secondAttribute="bottom" constant="19" id="gay-dq-mW3"/>
-                            <constraint firstItem="Yhr-dL-c4d" firstAttribute="leading" secondItem="7kf-IG-1KB" secondAttribute="trailing" constant="8" id="hqb-xs-8cc"/>
-                            <constraint firstItem="ZMl-kz-MJB" firstAttribute="leading" secondItem="raK-36-TGs" secondAttribute="trailing" constant="8" id="jfo-Ac-rfw"/>
-                            <constraint firstItem="5yy-qz-Kpp" firstAttribute="centerX" secondItem="tfP-UJ-uX6" secondAttribute="centerX" id="jlv-6c-hnY"/>
-                            <constraint firstItem="5yy-qz-Kpp" firstAttribute="leading" secondItem="fsw-qG-y0I" secondAttribute="trailing" constant="8" id="k06-Yd-cOX"/>
-                            <constraint firstItem="7kf-IG-1KB" firstAttribute="leading" secondItem="L5h-uV-FgH" secondAttribute="trailing" constant="8" id="nd7-uo-3u5"/>
-                            <constraint firstItem="raK-36-TGs" firstAttribute="top" secondItem="TST-TV-zkk" secondAttribute="top" constant="37" id="sI2-2b-IJr"/>
-                            <constraint firstItem="ZMl-kz-MJB" firstAttribute="top" secondItem="TST-TV-zkk" secondAttribute="top" constant="37" id="toS-kt-xVt"/>
+                            <constraint firstItem="91T-cF-8ZR" firstAttribute="leading" secondItem="TST-TV-zkk" secondAttribute="leading" id="42Z-h5-uy3"/>
+                            <constraint firstItem="91T-cF-8ZR" firstAttribute="bottom" secondItem="TST-TV-zkk" secondAttribute="bottom" id="9CW-Fs-mT6"/>
+                            <constraint firstItem="91T-cF-8ZR" firstAttribute="trailing" secondItem="TST-TV-zkk" secondAttribute="trailing" id="hCe-Ei-WPC"/>
+                            <constraint firstItem="91T-cF-8ZR" firstAttribute="top" secondItem="tfP-UJ-uX6" secondAttribute="top" id="hyd-Ch-HFu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TST-TV-zkk"/>
                     </view>
+                    <size key="freeformSize" width="320" height="480"/>
                     <connections>
+                        <outlet property="contentView" destination="91T-cF-8ZR" id="3rx-Lg-Ww8"/>
                         <outlet property="menuButton" destination="8CP-IK-hPU" id="d7X-Ej-fRb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djB-co-R1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-401" y="600"/>
+            <point key="canvasLocation" x="-402.39999999999998" y="599.55022488755628"/>
         </scene>
         <!--Instagram-->
         <scene sceneID="eqh-C2-zaE">

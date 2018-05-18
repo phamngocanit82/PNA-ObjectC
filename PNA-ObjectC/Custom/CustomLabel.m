@@ -1,6 +1,11 @@
 @implementation CustomLabel
 #pragma mark - Initializer
 -(void)awakeFromNib{
+    if (UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation)){
+        fontSize = self.font.pointSize*[UtilsPlatform getWidth]/320.0f;
+    }else{
+        fontSize = self.font.pointSize*[UtilsPlatform getHeight]/320.0f;
+    }
     if(self.keyLang!=nil){
         if ([self.keyLang length]>0)
             self.text = [LanguageService language:self.keyLang Text:self.text];
@@ -18,6 +23,17 @@
 }
 -(NSString*)trimming{
     return [self.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+}
+-(NSInteger)getFontSize{
+    return fontSize;
+}
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    if (UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation)){
+        self.font = [UIFont fontWithName:@"arial" size:fontSize];
+    }else{
+        self.font = [UIFont fontWithName:@"arial" size:fontSize+5];
+    }
 }
 -(void)drawTextInRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();

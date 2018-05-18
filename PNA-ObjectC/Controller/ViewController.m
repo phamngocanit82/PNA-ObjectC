@@ -15,16 +15,22 @@
 @implementation ViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-}
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
+    if(self.contentView){
+        [Utils animationFade:self.contentView FadeIn:true];
+    }
     if(self.revealViewController){
         self.revealViewController.delegate = self;
         [self.view addGestureRecognizer: self.revealViewController.tapGestureRecognizer];
         [self.view addGestureRecognizer: self.revealViewController.panGestureRecognizer];
     }
 }
-
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+}
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    [UtilsFont changeFont:(UIControl*)self.view];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

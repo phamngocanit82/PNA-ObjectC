@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 @interface UtilsFont : NSObject
-+(void)changeFont:(UIControl*)controller increaseFont:(BOOL)flag;
++(void)changeFont:(UIControl*)control;
 
 +(NSString*)fontName;
 @end
